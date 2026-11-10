@@ -36,8 +36,14 @@ jobs:
       - name: Instalar dependencias
         run: flutter pub get
 
-      - name: Compilar APK Release con Gradle Debug
-        run: flutter build apk --debug --verbose
+      - name: Diagnóstico de compilación y log
+        run: |
+          flutter build apk --debug || true
+          # Capturamos el error de Gradle exacto si existe
+          cat android/build.gradle || true
+
+      - name: Compilar APK con detalle
+        run: flutter build apk --debug
 
       - name: Subir artefacto APK
         uses: actions/upload-artifact@v4
