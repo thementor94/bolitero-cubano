@@ -33,15 +33,16 @@ jobs:
           flutter create --org com.bolitero.libre --project-name bolitero_cubano .
           cp -r android $GITHUB_WORKSPACE/
 
+      - name: Configurar minSdkVersion y dependencias nativas
+        run: |
+          sed -i 's/minSdkVersion = flutter.minSdkVersion/minSdkVersion = 21/g' android/app/build.gradle || true
+          sed -i 's/minSdk = flutter.minSdkVersion/minSdk = 21/g' android/app/build.gradle || true
+
       - name: Instalar dependencias
         run: flutter pub get
 
-      - name: Compilar APK mostrando log en consola
-        run: |
-          flutter build apk --debug || {
-            echo "::error::Fallo de compilacion de Gradle"
-            exit 1
-          }
+      - name: Compilar APK
+        run: flutter build apk --debug
 
       - name: Subir artefacto APK
         uses: actions/upload-artifact@v4
