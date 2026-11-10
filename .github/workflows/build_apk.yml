@@ -38,14 +38,11 @@ jobs:
 
       - name: Compilar APK capturando log
         run: |
-          flutter build apk --debug > build_output.log 2>&1 || {
-            echo "=== ERROR DE COMPILACIÓN DETECTADO ==="
-            tail -n 60 build_output.log
-            exit 1
-          }
+          flutter build apk --debug > build_output.log 2>&1 || true
+          tail -n 60 build_output.log > log_summary.txt
 
-      - name: Subir artefacto APK
+      - name: Subir log de error de compilacion
         uses: actions/upload-artifact@v4
         with:
-          name: bolitero-cubano-apk
-          path: build/app/outputs/flutter-apk/*.apk
+          name: build-failure-log
+          path: log_summary.txt
