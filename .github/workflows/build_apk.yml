@@ -36,10 +36,10 @@ jobs:
       - name: Instalar dependencias
         run: flutter pub get
 
-      - name: Compilar APK Release
-        run: flutter build apk --release
+      - name: Compilar APK Release con Gradle Debug
+        run: flutter build apk --debug --verbose
 
-      - name: Subir artefacto APK Release
+      - name: Subir artefacto APK
         uses: actions/upload-artifact@v4
         with:
           name: bolitero-cubano-apk
