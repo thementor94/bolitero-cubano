@@ -36,13 +36,15 @@ jobs:
       - name: Instalar dependencias
         run: flutter pub get
 
-      - name: Compilar APK capturando log
+      - name: Compilar APK mostrando log en consola
         run: |
-          flutter build apk --debug > build_output.log 2>&1 || true
-          tail -n 60 build_output.log > log_summary.txt
+          flutter build apk --debug || {
+            echo "::error::Fallo de compilacion de Gradle"
+            exit 1
+          }
 
-      - name: Subir log de error de compilacion
+      - name: Subir artefacto APK
         uses: actions/upload-artifact@v4
         with:
-          name: build-failure-log
-          path: log_summary.txt
+          name: bolitero-cubano-apk
+          path: build/app/outputs/flutter-apk/*.apk
