@@ -36,8 +36,13 @@ jobs:
       - name: Instalar dependencias
         run: flutter pub get
 
-      - name: Compilar APK
-        run: flutter build apk --debug
+      - name: Compilar APK capturando log
+        run: |
+          flutter build apk --debug > build_output.log 2>&1 || {
+            echo "=== ERROR DE COMPILACIÓN DETECTADO ==="
+            tail -n 60 build_output.log
+            exit 1
+          }
 
       - name: Subir artefacto APK
         uses: actions/upload-artifact@v4
