@@ -33,10 +33,34 @@ jobs:
           flutter create --org com.bolitero.libre --project-name bolitero_cubano .
           cp -r android $GITHUB_WORKSPACE/
 
-      - name: Configurar minSdkVersion y dependencias nativas
+      - name: Configurar SDK versions y compatibilidad de plugins
         run: |
+          # 1. Configurar app/build.gradle
+          sed -i 's/compileSdk = flutter.compileSdkVersion/compileSdk = 34\n    compileSdkVersion = 34/g' android/app/build.gradle || true
+          sed -i 's/compileSdkVersion flutter.compileSdkVersion/compileSdkVersion 34/g' android/app/build.gradle || true
+          sed -i 's/targetSdk = flutter.targetSdkVersion/targetSdk = 34/g' android/app/build.gradle || true
+          sed -i 's/targetSdkVersion flutter.targetSdkVersion/targetSdkVersion 34/g' android/app/build.gradle || true
           sed -i 's/minSdkVersion = flutter.minSdkVersion/minSdkVersion = 21/g' android/app/build.gradle || true
           sed -i 's/minSdk = flutter.minSdkVersion/minSdk = 21/g' android/app/build.gradle || true
+
+          # 2. Inyectar configuración obligatoria a subproyectos (fix app_links compileSdkVersion null)
+          cat << 'EOF' >> android/build.gradle
+
+subprojects {
+    afterEvaluate { project ->
+        if (project.hasProperty('android')) {
+            project.android {
+                compileSdkVersion 34
+                buildToolsVersion "34.0.0"
+            }
+        }
+    }
+}
+EOF
+          echo "=== android/build.gradle ==="
+          tail -n 20 android/build.gradle
+          echo "=== android/app/build.gradle ==="
+          grep -E "compileSdk|minSdk|targetSdk" android/app/build.gradle
 
       - name: Instalar dependencias
         run: flutter pub get
