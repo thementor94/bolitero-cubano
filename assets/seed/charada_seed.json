@@ -1,0 +1,1106 @@
+[
+  {
+    "number": 1,
+    "primary_name": "Caballo",
+    "category": "clasica",
+    "synonyms": [
+      "Sol",
+      "Candela",
+      "Revolución",
+      "Fidel",
+      "Dios",
+      "Pescado grande"
+    ]
+  },
+  {
+    "number": 2,
+    "primary_name": "Mariposa",
+    "category": "clasica",
+    "synonyms": [
+      "Hombre",
+      "Dinero",
+      "Cafetera",
+      "Jinete"
+    ]
+  },
+  {
+    "number": 3,
+    "primary_name": "Marinero",
+    "category": "clasica",
+    "synonyms": [
+      "Luna",
+      "Muerto",
+      "Taza",
+      "Ninfa",
+      "Viaje"
+    ]
+  },
+  {
+    "number": 4,
+    "primary_name": "Gato",
+    "category": "clasica",
+    "synonyms": [
+      "Soldado",
+      "Llave",
+      "Espejo",
+      "Militar",
+      "Preso"
+    ]
+  },
+  {
+    "number": 5,
+    "primary_name": "Monja",
+    "category": "clasica",
+    "synonyms": [
+      "Periódico",
+      "Mar",
+      "Navaja",
+      "Candela"
+    ]
+  },
+  {
+    "number": 6,
+    "primary_name": "Jicotea",
+    "category": "clasica",
+    "synonyms": [
+      "Carta",
+      "Teléfono",
+      "Botella",
+      "Luna"
+    ]
+  },
+  {
+    "number": 7,
+    "primary_name": "Caracol",
+    "category": "clasica",
+    "synonyms": [
+      "Sueño",
+      "Mierda",
+      "Pintor",
+      "Gallina"
+    ]
+  },
+  {
+    "number": 8,
+    "primary_name": "Muerto",
+    "category": "clasica",
+    "synonyms": [
+      "León",
+      "Calavera",
+      "Dinero",
+      "Vaso"
+    ]
+  },
+  {
+    "number": 9,
+    "primary_name": "Elefante",
+    "category": "clasica",
+    "synonyms": [
+      "Entierro",
+      "Lengua",
+      "Lira",
+      "Foso"
+    ]
+  },
+  {
+    "number": 10,
+    "primary_name": "Pescado grande",
+    "category": "clasica",
+    "synonyms": [
+      "Cazador",
+      "Desgracia",
+      "Malla",
+      "Red"
+    ]
+  },
+  {
+    "number": 11,
+    "primary_name": "Gallo",
+    "category": "clasica",
+    "synonyms": [
+      "Lluvia",
+      "Barril",
+      "Fábrica",
+      "Caballo"
+    ]
+  },
+  {
+    "number": 12,
+    "primary_name": "Mujer santa",
+    "category": "clasica",
+    "synonyms": [
+      "Viaje",
+      "Cometa",
+      "Niebla",
+      "Río"
+    ]
+  },
+  {
+    "number": 13,
+    "primary_name": "Pavo real",
+    "category": "clasica",
+    "synonyms": [
+      "Niño",
+      "Fruta",
+      "Cienpiés",
+      "Elefante"
+    ]
+  },
+  {
+    "number": 14,
+    "primary_name": "Gato tigre",
+    "category": "clasica",
+    "synonyms": [
+      "Cementerio",
+      "Sartén",
+      "Enamorado"
+    ]
+  },
+  {
+    "number": 15,
+    "primary_name": "Perro",
+    "category": "clasica",
+    "synonyms": [
+      "Visita",
+      "Muerto",
+      "Celo",
+      "Cuchillo",
+      "Malvado"
+    ]
+  },
+  {
+    "number": 16,
+    "primary_name": "Toro",
+    "category": "clasica",
+    "synonyms": [
+      "Virgen",
+      "Carta",
+      "Pecho",
+      "Ternero"
+    ]
+  },
+  {
+    "number": 17,
+    "primary_name": "Luna",
+    "category": "clasica",
+    "synonyms": [
+      "San Lázaro",
+      "Armas",
+      "Médico",
+      "Camisón"
+    ]
+  },
+  {
+    "number": 18,
+    "primary_name": "Pescadito",
+    "category": "clasica",
+    "synonyms": [
+      "Iglesia",
+      "Barco",
+      "Sirena",
+      "Palma"
+    ]
+  },
+  {
+    "number": 19,
+    "primary_name": "Lombriz",
+    "category": "clasica",
+    "synonyms": [
+      "Mesa",
+      "Campesino",
+      "Fusil",
+      "Bandera"
+    ]
+  },
+  {
+    "number": 20,
+    "primary_name": "Gato fino",
+    "category": "clasica",
+    "synonyms": [
+      "Cañón",
+      "Orina",
+      "Libro",
+      "Tiburón"
+    ]
+  },
+  {
+    "number": 21,
+    "primary_name": "Majá",
+    "category": "clasica",
+    "synonyms": [
+      "Serpiente",
+      "Culebra",
+      "Dinero",
+      "Cigarro"
+    ]
+  },
+  {
+    "number": 22,
+    "primary_name": "Sapo",
+    "category": "clasica",
+    "synonyms": [
+      "Estrella",
+      "Lirio",
+      "Chimenea",
+      "Sol"
+    ]
+  },
+  {
+    "number": 23,
+    "primary_name": "Barco",
+    "category": "clasica",
+    "synonyms": [
+      "Vapor",
+      "Escalera",
+      "Águila",
+      "Monte"
+    ]
+  },
+  {
+    "number": 24,
+    "primary_name": "Paloma",
+    "category": "clasica",
+    "synonyms": [
+      "Música",
+      "Viento",
+      "Carpintero",
+      "Reloj"
+    ]
+  },
+  {
+    "number": 25,
+    "primary_name": "Piedra fina",
+    "category": "clasica",
+    "synonyms": [
+      "Casa",
+      "Sol",
+      "Doncella",
+      "Granada"
+    ]
+  },
+  {
+    "number": 26,
+    "primary_name": "Anguila",
+    "category": "clasica",
+    "synonyms": [
+      "Médico",
+      "Calle",
+      "Nube",
+      "Brillante"
+    ]
+  },
+  {
+    "number": 27,
+    "primary_name": "Avispa",
+    "category": "clasica",
+    "synonyms": [
+      "Canario",
+      "Campana",
+      "Madre",
+      "Iglesia"
+    ]
+  },
+  {
+    "number": 28,
+    "primary_name": "Chivo",
+    "category": "clasica",
+    "synonyms": [
+      "Político",
+      "Tabaco",
+      "Disparo",
+      "Uva"
+    ]
+  },
+  {
+    "number": 29,
+    "primary_name": "Ratón",
+    "category": "clasica",
+    "synonyms": [
+      "Nube",
+      "Venado",
+      "Águila",
+      "Melón"
+    ]
+  },
+  {
+    "number": 30,
+    "primary_name": "Camarón",
+    "category": "clasica",
+    "synonyms": [
+      "Arcoíris",
+      "Cangrejo",
+      "Monja",
+      "Alfiler"
+    ]
+  },
+  {
+    "number": 31,
+    "primary_name": "Venado",
+    "category": "clasica",
+    "synonyms": [
+      "Sorpresa",
+      "Escuela",
+      "Soldado",
+      "Carta"
+    ]
+  },
+  {
+    "number": 32,
+    "primary_name": "Cochino",
+    "category": "clasica",
+    "synonyms": [
+      "Enemigo",
+      "Mula",
+      "Demonio",
+      "Reloj"
+    ]
+  },
+  {
+    "number": 33,
+    "primary_name": "Tiñosa",
+    "category": "clasica",
+    "synonyms": [
+      "Muerte",
+      "Baraja",
+      "Huracán",
+      "Luto"
+    ]
+  },
+  {
+    "number": 34,
+    "primary_name": "Mono",
+    "category": "clasica",
+    "synonyms": [
+      "Negro",
+      "Familia",
+      "Sombrero",
+      "Lotería"
+    ]
+  },
+  {
+    "number": 35,
+    "primary_name": "Araña",
+    "category": "clasica",
+    "synonyms": [
+      "Bombillo",
+      "Herradura",
+      "Marinero",
+      "Zapato"
+    ]
+  },
+  {
+    "number": 36,
+    "primary_name": "Colibrí",
+    "category": "clasica",
+    "synonyms": [
+      "Pajarito",
+      "Brujo",
+      "Cueva",
+      "Flecha"
+    ]
+  },
+  {
+    "number": 37,
+    "primary_name": "Brujería",
+    "category": "clasica",
+    "synonyms": [
+      "Gallina",
+      "Hormiga",
+      "Piedra",
+      "Policía"
+    ]
+  },
+  {
+    "number": 38,
+    "primary_name": "Macao",
+    "category": "clasica",
+    "synonyms": [
+      "Guardián",
+      "Dinero",
+      "Reloj",
+      "Carretilla"
+    ]
+  },
+  {
+    "number": 39,
+    "primary_name": "Conejo",
+    "category": "clasica",
+    "synonyms": [
+      "Rayo",
+      "Baile",
+      "Tinta",
+      "Serpiente"
+    ]
+  },
+  {
+    "number": 40,
+    "primary_name": "Cura",
+    "category": "clasica",
+    "synonyms": [
+      "Santo",
+      "Campanario",
+      "Sangre",
+      "Barba"
+    ]
+  },
+  {
+    "number": 41,
+    "primary_name": "Lagartija",
+    "category": "clasica",
+    "synonyms": [
+      "Prisión",
+      "Pato",
+      "Relámpago",
+      "Muerte"
+    ]
+  },
+  {
+    "number": 42,
+    "primary_name": "Pato",
+    "category": "clasica",
+    "synonyms": [
+      "País",
+      "Abogado",
+      "Cama",
+      "Joya"
+    ]
+  },
+  {
+    "number": 43,
+    "primary_name": "Alacrán",
+    "category": "clasica",
+    "synonyms": [
+      "Amigo",
+      "Puñal",
+      "Ventana",
+      "Espejo"
+    ]
+  },
+  {
+    "number": 44,
+    "primary_name": "Año malo",
+    "category": "clasica",
+    "synonyms": [
+      "Tempestad",
+      "Desgracia",
+      "Fruta",
+      "Hierro"
+    ]
+  },
+  {
+    "number": 45,
+    "primary_name": "Tiburón",
+    "category": "clasica",
+    "synonyms": [
+      "Presidente",
+      "Policía",
+      "Navaja",
+      "Zapato"
+    ]
+  },
+  {
+    "number": 46,
+    "primary_name": "Guajiro",
+    "category": "clasica",
+    "synonyms": [
+      "Humo",
+      "Sombrero",
+      "Salto",
+      "Palma"
+    ]
+  },
+  {
+    "number": 47,
+    "primary_name": "Pájaro",
+    "category": "clasica",
+    "synonyms": [
+      "Mundo",
+      "Rosa",
+      "Escopeta",
+      "Volcán"
+    ]
+  },
+  {
+    "number": 48,
+    "primary_name": "Cucaracha",
+    "category": "clasica",
+    "synonyms": [
+      "Accidente",
+      "Miedo",
+      "Agua",
+      "Reloj"
+    ]
+  },
+  {
+    "number": 49,
+    "primary_name": "Borracho",
+    "category": "clasica",
+    "synonyms": [
+      "Pluma",
+      "Percha",
+      "Llave",
+      "Látigo"
+    ]
+  },
+  {
+    "number": 50,
+    "primary_name": "Policía",
+    "category": "clasica",
+    "synonyms": [
+      "Flor",
+      "Agua",
+      "Cautiverio",
+      "Candado"
+    ]
+  },
+  {
+    "number": 51,
+    "primary_name": "Soldado",
+    "category": "clasica",
+    "synonyms": [
+      "Oggún",
+      "Hierro",
+      "Sereno",
+      "Sed"
+    ]
+  },
+  {
+    "number": 52,
+    "primary_name": "Bicicleta",
+    "category": "clasica",
+    "synonyms": [
+      "Coche",
+      "Abogado",
+      "Rueda",
+      "Libreta"
+    ]
+  },
+  {
+    "number": 53,
+    "primary_name": "Luz",
+    "category": "clasica",
+    "synonyms": [
+      "Prenda",
+      "Trono",
+      "Diamante",
+      "Tragedia"
+    ]
+  },
+  {
+    "number": 54,
+    "primary_name": "Flores",
+    "category": "clasica",
+    "synonyms": [
+      "Cañón",
+      "Espada",
+      "Sueño",
+      "Tambor"
+    ]
+  },
+  {
+    "number": 55,
+    "primary_name": "Cangrejo",
+    "category": "clasica",
+    "synonyms": [
+      "Isla",
+      "Espejo",
+      "Fuego",
+      "Policía"
+    ]
+  },
+  {
+    "number": 56,
+    "primary_name": "Reina",
+    "category": "clasica",
+    "synonyms": [
+      "Meretriz",
+      "Mariposa",
+      "Camisa",
+      "Cara"
+    ]
+  },
+  {
+    "number": 57,
+    "primary_name": "Cama",
+    "category": "clasica",
+    "synonyms": [
+      "Telegrama",
+      "Noche",
+      "Puerta",
+      "Novia"
+    ]
+  },
+  {
+    "number": 58,
+    "primary_name": "Adulterio",
+    "category": "clasica",
+    "synonyms": [
+      "Retrato",
+      "Cruz",
+      "Cangrejo",
+      "Vaso"
+    ]
+  },
+  {
+    "number": 59,
+    "primary_name": "Loco",
+    "category": "clasica",
+    "synonyms": [
+      "Fonógrafo",
+      "Calavera",
+      "Moneda",
+      "Culebra"
+    ]
+  },
+  {
+    "number": 60,
+    "primary_name": "Payaso",
+    "category": "clasica",
+    "synonyms": [
+      "Sol",
+      "Comiquita",
+      "Huevo",
+      "Tambor"
+    ]
+  },
+  {
+    "number": 61,
+    "primary_name": "Cañón",
+    "category": "clasica",
+    "synonyms": [
+      "Piedra",
+      "Escopeta",
+      "Soldado",
+      "Tijera"
+    ]
+  },
+  {
+    "number": 62,
+    "primary_name": "Matrimonio",
+    "category": "clasica",
+    "synonyms": [
+      "Nieve",
+      "Lámpara",
+      "Carretera",
+      "Toro"
+    ]
+  },
+  {
+    "number": 63,
+    "primary_name": "Asesino",
+    "category": "clasica",
+    "synonyms": [
+      "Bandido",
+      "Escalera",
+      "Cuerno",
+      "Policía"
+    ]
+  },
+  {
+    "number": 64,
+    "primary_name": "Muerto grande",
+    "category": "clasica",
+    "synonyms": [
+      "Falso",
+      "Reloj",
+      "Campana",
+      "Tiro"
+    ]
+  },
+  {
+    "number": 65,
+    "primary_name": "Comida",
+    "category": "clasica",
+    "synonyms": [
+      "Oshún",
+      "Brujo",
+      "Cárcel",
+      "Cazuela"
+    ]
+  },
+  {
+    "number": 66,
+    "primary_name": "Diablo",
+    "category": "clasica",
+    "synonyms": [
+      "Carnaval",
+      "Máscara",
+      "Pozo",
+      "Carbón"
+    ]
+  },
+  {
+    "number": 67,
+    "primary_name": "Puñalada",
+    "category": "clasica",
+    "synonyms": [
+      "Relámpago",
+      "Autoridad",
+      "Herida",
+      "Reloj"
+    ]
+  },
+  {
+    "number": 68,
+    "primary_name": "Grande",
+    "category": "clasica",
+    "synonyms": [
+      "Templo",
+      "Globo",
+      "Circo",
+      "Palma"
+    ]
+  },
+  {
+    "number": 69,
+    "primary_name": "Pozo",
+    "category": "clasica",
+    "synonyms": [
+      "Fango",
+      "Barco",
+      "Reloj",
+      "Río"
+    ]
+  },
+  {
+    "number": 70,
+    "primary_name": "Teléfono",
+    "category": "clasica",
+    "synonyms": [
+      "Tiro",
+      "Barril",
+      "Sapo",
+      "Arco"
+    ]
+  },
+  {
+    "number": 71,
+    "primary_name": "Fusil",
+    "category": "clasica",
+    "synonyms": [
+      "Perro",
+      "Sombrero",
+      "Soldado",
+      "Baile"
+    ]
+  },
+  {
+    "number": 72,
+    "primary_name": "Buey",
+    "category": "clasica",
+    "synonyms": [
+      "Collar",
+      "Ferrocarril",
+      "Jarro",
+      "Látigo"
+    ]
+  },
+  {
+    "number": 73,
+    "primary_name": "Navaja",
+    "category": "clasica",
+    "synonyms": [
+      "Corte",
+      "Manzana",
+      "Parque",
+      "Bandera"
+    ]
+  },
+  {
+    "number": 74,
+    "primary_name": "Papalote",
+    "category": "clasica",
+    "synonyms": [
+      "Militar",
+      "Serpiente",
+      "Ruina",
+      "Corona"
+    ]
+  },
+  {
+    "number": 75,
+    "primary_name": "Cine",
+    "category": "clasica",
+    "synonyms": [
+      "Guitarra",
+      "Pito",
+      "Novio",
+      "Estrella"
+    ]
+  },
+  {
+    "number": 76,
+    "primary_name": "Humo",
+    "category": "clasica",
+    "synonyms": [
+      "Hierro",
+      "Bomba",
+      "Pájaro",
+      "Reloj"
+    ]
+  },
+  {
+    "number": 77,
+    "primary_name": "Banderas",
+    "category": "clasica",
+    "synonyms": [
+      "Yúa",
+      "Muletas",
+      "Guerra",
+      "Trono"
+    ]
+  },
+  {
+    "number": 78,
+    "primary_name": "Obispo",
+    "category": "clasica",
+    "synonyms": [
+      "Sarcófago",
+      "Ataúd",
+      "Luna",
+      "Viento"
+    ]
+  },
+  {
+    "number": 79,
+    "primary_name": "Tren",
+    "category": "clasica",
+    "synonyms": [
+      "Coche",
+      "Abogado",
+      "Lagarto",
+      "Botella"
+    ]
+  },
+  {
+    "number": 80,
+    "primary_name": "Vieja",
+    "category": "clasica",
+    "synonyms": [
+      "Buena suerte",
+      "Trompo",
+      "Cama",
+      "Sol"
+    ]
+  },
+  {
+    "number": 81,
+    "primary_name": "Teatro",
+    "category": "clasica",
+    "synonyms": [
+      "Actor",
+      "Ingeniero",
+      "Barco",
+      "Reloj"
+    ]
+  },
+  {
+    "number": 82,
+    "primary_name": "Madre",
+    "category": "clasica",
+    "synonyms": [
+      "León",
+      "Bautizo",
+      "Tragedia",
+      "Flor"
+    ]
+  },
+  {
+    "number": 83,
+    "primary_name": "Tragedia",
+    "category": "clasica",
+    "synonyms": [
+      "Limosnero",
+      "Madera",
+      "Bastón",
+      "Muerte"
+    ]
+  },
+  {
+    "number": 84,
+    "primary_name": "Sangre",
+    "category": "clasica",
+    "synonyms": [
+      "Ciego",
+      "Banquete",
+      "Hacha",
+      "Oro"
+    ]
+  },
+  {
+    "number": 85,
+    "primary_name": "Reloj",
+    "category": "clasica",
+    "synonyms": [
+      "Tiempo",
+      "Espejo",
+      "Águila",
+      "Policía"
+    ]
+  },
+  {
+    "number": 86,
+    "primary_name": "Convento",
+    "category": "clasica",
+    "synonyms": [
+      "Tijeras",
+      "Monja",
+      "Fuego",
+      "Carretilla"
+    ]
+  },
+  {
+    "number": 87,
+    "primary_name": "Plátano",
+    "category": "clasica",
+    "synonyms": [
+      "Fuego",
+      "Toro",
+      "Espada",
+      "Cueva"
+    ]
+  },
+  {
+    "number": 88,
+    "primary_name": "Hojas",
+    "category": "clasica",
+    "synonyms": [
+      "Aduana",
+      "Trompeta",
+      "Muerte",
+      "Vidrio"
+    ]
+  },
+  {
+    "number": 89,
+    "primary_name": "Cometa",
+    "category": "clasica",
+    "synonyms": [
+      "Lotería",
+      "Melón",
+      "Anciano",
+      "Tambor"
+    ]
+  },
+  {
+    "number": 90,
+    "primary_name": "Viejo",
+    "category": "clasica",
+    "synonyms": [
+      "Esclavo",
+      "Dinero",
+      "Cruz",
+      "Espejo"
+    ]
+  },
+  {
+    "number": 91,
+    "primary_name": "Tranvía",
+    "category": "clasica",
+    "synonyms": [
+      "Pájaro",
+      "Limosna",
+      "Bolso",
+      "Carta"
+    ]
+  },
+  {
+    "number": 92,
+    "primary_name": "Avión",
+    "category": "clasica",
+    "synonyms": [
+      "Globo",
+      "Estrella",
+      "Cuba",
+      "Nube"
+    ]
+  },
+  {
+    "number": 93,
+    "primary_name": "Sortija",
+    "category": "clasica",
+    "synonyms": [
+      "Revolución",
+      "General",
+      "Joya",
+      "Anillo"
+    ]
+  },
+  {
+    "number": 94,
+    "primary_name": "Machete",
+    "category": "clasica",
+    "synonyms": [
+      "Mariposa",
+      "Habana",
+      "Cuchillo",
+      "Flores"
+    ]
+  },
+  {
+    "number": 95,
+    "primary_name": "Guerra",
+    "category": "clasica",
+    "synonyms": [
+      "Perro grande",
+      "Espada",
+      "Dragón",
+      "Fuego"
+    ]
+  },
+  {
+    "number": 96,
+    "primary_name": "Desafío",
+    "category": "clasica",
+    "synonyms": [
+      "Zapato",
+      "Médico",
+      "Pavo",
+      "Bandera"
+    ]
+  },
+  {
+    "number": 97,
+    "primary_name": "Grillo",
+    "category": "clasica",
+    "synonyms": [
+      "Limosnero",
+      "Manta",
+      "Viejo",
+      "Miedo"
+    ]
+  },
+  {
+    "number": 98,
+    "primary_name": "Entierro",
+    "category": "clasica",
+    "synonyms": [
+      "Traición",
+      "Santo",
+      "Piano",
+      "Muerto"
+    ]
+  },
+  {
+    "number": 99,
+    "primary_name": "Serpiente",
+    "category": "clasica",
+    "synonyms": [
+      "Carbonero",
+      "Pozo",
+      "Brujo",
+      "Cueva"
+    ]
+  },
+  {
+    "number": 100,
+    "primary_name": "Dios",
+    "category": "clasica",
+    "synonyms": [
+      "Inodoro",
+      "Escoba",
+      "Muerte",
+      "Fin"
+    ]
+  }
+]

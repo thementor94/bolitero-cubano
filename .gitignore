@@ -1,0 +1,26 @@
+# Flutter / Dart
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.packages
+build/
+*.iml
+.idea/
+
+# Android build outputs & local config
+android/local.properties
+android/.gradle
+android/captures/
+*.apk
+*.aab
+
+# Stitch zips & heavy references
+*.zip
+
+# System & OS
+.DS_Store
+Thumbs.db
+design/
+design/
+*.zip
+pubspec_files/

@@ -1,0 +1,29 @@
+feature,area,priority,original,clone,notes
+Resultados en tiempo real Florida (Midday/Evening),resultados,must,yes,no,Sorteo base de la bolita cubana
+Resultados en tiempo real Georgia (Midday/Evening/Night),resultados,must,yes,no,Sorteos suplementarios populares
+Resultados en tiempo real New York (Midday/Evening),resultados,must,yes,no,Lotería tradicional de respaldo
+Resultados Powerball y Mega Millions,resultados,should,yes,no,Loterías mayores de EEUU
+Desglose Bolita: Fijo Centena y Corridos,resultados,must,yes,yes,Implementado en el esqueleto base Flutter + SQLite
+Notificaciones push al publicar resultados,notificaciones,must,yes,no,Alerta instantánea en cuanto cierra el sorteo
+Buscador y diccionario de Charada Cubana Tradicional (1-100),charada,must,yes,yes,Implementado en el esqueleto base Flutter + SQLite
+Charada Mixta y Moderna ampliada,charada,should,yes,no,Significados populares y sueños modernos
+Buscador de sueños a números,charada,must,yes,yes,Implementado en el esqueleto base Flutter + SQLite
+Generador de Pirámide Pick 3 y Pick 4,algoritmos,must,yes,yes,Implementado en el esqueleto base Flutter + SQLite
+Generador de Pirámide de la Fecha,algoritmos,must,yes,yes,Implementado en el esqueleto base Flutter + SQLite
+Cruz de la Suerte automática,algoritmos,must,yes,yes,Implementado en el esqueleto base Flutter + SQLite
+Tabla de los Dioses / Atómico 49,algoritmos,should,yes,no,Matriz de relación de números del día anterior
+Tabla de Equivalencias Espejos y Acompañantes (+25),algoritmos,must,yes,yes,Implementado en el esqueleto base Flutter + SQLite
+Buscador y generador de combinaciones de Parlés,algoritmos,must,yes,yes,Implementado en el esqueleto base Flutter + SQLite
+Filtro de Reducciones (decenas y terminales),algoritmos,should,yes,no,Herramienta para acotar universo de apuestas
+Control de números atrasados (fríos) y calientes,estadisticas,must,yes,no,Métricas de frecuencias en 30/60/90 días
+Historial y estadísticas por posición (Front/Back Pair y Centenas),estadisticas,should,yes,no,Patrones de repetición
+Cartón de estudio mensual inteligente,estadisticas,should,yes,no,Matriz visual interactiva de salidas
+Mi Laboratorio: Registro y simulación de jugadas personales,laboratorio,should,yes,yes,Implementado en el esqueleto base Flutter + SQLite
+Encuestas comunitarias diarias y tendencias de votos,comunidad,could,yes,no,Voto anónimo de pronóstico del público
+Ranking y leaderboard de pronosticadores,comunidad,could,yes,no,Gamificación de pronósticos
+Horóscopo diario y números de la suerte por signo,astrologia,could,yes,no,Contenido lúdico diario
+Modo Offline completo para Charada y Calculadoras,arquitectura,must,no,yes,Implementado en el esqueleto base Flutter + SQLite
+Base de datos local con sincronización de deltas ligeros,arquitectura,must,no,yes,Implementado en el esqueleto base Flutter + SQLite
+Tema Oscuro y diseño limpio sin publicidad invasiva,ui,must,no,yes,Implementado en el esqueleto base Flutter + SQLite
+Suscripción VIP / IAP de pago recurrente,monetizacion,could,yes,skip,Se sustituye por modelo limpio / donación / freemium ético
+Red publicitaria AdMob de anuncios intersticiales invasivos,monetizacion,could,yes,skip,Descartado por pésima UX y consumo de datos en Cuba
