@@ -26,15 +26,6 @@ jobs:
           channel: 'stable'
           cache: true
 
-      - name: Re-generar proyecto Android oficial
-        run: |
-          mkdir ../temp_bolitero && cd ../temp_bolitero
-          flutter create --org com.bolitero.libre --project-name bolitero_cubano .
-          cp -r android $GITHUB_WORKSPACE/
-
-      - name: Configurar SDK versions y compatibilidad de plugins
-        run: bash scripts/setup_android.sh
-
       - name: Instalar dependencias
         run: flutter pub get
 
