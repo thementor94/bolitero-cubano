@@ -6,6 +6,9 @@ on:
     tags: [ 'v*' ]
   workflow_dispatch:
 
+permissions:
+  contents: write
+
 jobs:
   build:
     name: Compilar Flutter APK
@@ -37,3 +40,21 @@ jobs:
         with:
           name: bolitero-cubano-apk
           path: build/app/outputs/flutter-apk/*.apk
+
+      - name: Publicar Release Oficial en GitHub
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: v1.0.0
+          name: "Bolitero Libre v1.0.0 (APK Oficial Release)"
+          body: |
+            ### 🎲 Bolitero Libre - La Bolita Cubana & Loterías (v1.0.0)
+            * **100% Gratuito y Libre**: Sin anuncios, sin compras integradas, sin rastreadores.
+            * **Offline-First Nativo**: Base de datos SQLite pre-cargada con los 100 números de la Charada y resultados históricos.
+            * **Diseño Stitch Oficial**: Tema oscuro minimalista de alta legibilidad (`#0E1116`, acentos dorados `#F2B33D` y turquesas `#2EC4B6`).
+            * **Herramientas de Cálculo**: Pirámide Módulo 10, Cruz de la Suerte 3x3, Equivalencias (+25, -25, espejo, inverso) y Candados.
+            * **Mi Laboratorio**: Simulador de jugadas con cálculo automático de premios (Fijo 70x, Corrido 20x, Centena 300x, Parlé 900x/100x).
+          draft: false
+          prerelease: false
+          files: build/app/outputs/flutter-apk/app-release.apk
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
