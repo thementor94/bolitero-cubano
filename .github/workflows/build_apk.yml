@@ -32,6 +32,9 @@ jobs:
       - name: Instalar dependencias
         run: flutter pub get
 
+      - name: Ejecutar pruebas unitarias
+        run: flutter test test/unit/
+
       - name: Compilar APK Release
         run: flutter build apk --release --android-skip-build-dependency-validation
 
@@ -44,15 +47,18 @@ jobs:
       - name: Publicar Release Oficial en GitHub
         uses: softprops/action-gh-release@v2
         with:
-          tag_name: v1.0.0
-          name: "Bolitero Libre v1.0.0 (APK Oficial Release)"
+          tag_name: v1.1.0
+          name: "Bolitero Libre v1.1.0 (Órganos Funcionales Vivos)"
           body: |
-            ### 🎲 Bolitero Libre - La Bolita Cubana & Loterías (v1.0.0)
+            ### 🎲 Bolitero Libre v1.1.0 - Totalmente Funcional
             * **100% Gratuito y Libre**: Sin anuncios, sin compras integradas, sin rastreadores.
-            * **Offline-First Nativo**: Base de datos SQLite pre-cargada con los 100 números de la Charada y resultados históricos.
-            * **Diseño Stitch Oficial**: Tema oscuro minimalista de alta legibilidad (`#0E1116`, acentos dorados `#F2B33D` y turquesas `#2EC4B6`).
-            * **Herramientas de Cálculo**: Pirámide Módulo 10, Cruz de la Suerte 3x3, Equivalencias (+25, -25, espejo, inverso) y Candados.
-            * **Mi Laboratorio**: Simulador de jugadas con cálculo automático de premios (Fijo 70x, Corrido 20x, Centena 300x, Parlé 900x/100x).
+            * **Órganos Vivos Pantalla por Pantalla**: Implementación completa de los 17 diseños de Stitch.
+            * **Historial Completo de 180 Días**: Base SQLite pre-sembrada con 900 sorteos oficiales e índices analíticos de alto rendimiento.
+            * **Charada Tradicional y Mística**: 100 términos canónicos, sinónimos, deidades sincréticas y números acompañantes (jaladeras).
+            * **Estadísticas Analíticas**: Top 10 Calientes, Top 10 Atrasados y Cartón Mensual Heatmap 10x10.
+            * **Suite de Cálculo de 7 Herramientas**: Pirámide Pascal mod 10 con inyección rápida, Cruz 3x3 Tradicional, Equivalencias (+25, -25, espejo, inverso), Candados/Parlés, Reducciones por decenas/terminales/paridad, Tabla de los Dioses y Horóscopo determinista.
+            * **Mi Laboratorio y Comprobante Digital**: Simulador financiero con liquidación automática y ticket voucher compartible por WhatsApp/Telegram.
+            * **Encuesta Comunitaria y Ajustes**: Termómetro popular offline-resilient y configuración regional de Parlé (Habana 900x vs Oriente 1000x).
           draft: false
           prerelease: false
           files: build/app/outputs/flutter-apk/app-release.apk

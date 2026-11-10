@@ -3,1104 +3,900 @@
     "number": 1,
     "primary_name": "Caballo",
     "category": "clasica",
-    "synonyms": [
-      "Sol",
-      "Candela",
-      "Revolución",
-      "Fidel",
-      "Dios",
-      "Pescado grande"
-    ]
+    "synonyms": "Sol, Candela, Revolución, Fidel, Pescado grande",
+    "deity": "Changó / Santa Bárbara",
+    "accompanying": "24, 52, 79",
+    "description": "Representa la fuerza, el sol naciente y el movimiento imponente."
   },
   {
     "number": 2,
     "primary_name": "Mariposa",
     "category": "clasica",
-    "synonyms": [
-      "Hombre",
-      "Dinero",
-      "Cafetera",
-      "Jinete"
-    ]
+    "synonyms": "Hombre, Dinero, Cafetera, Jinete, Papalote",
+    "deity": "Ochún / Caridad del Cobre",
+    "accompanying": "16, 25, 94",
+    "description": "Símbolo de transformación, elegancia y fortuna rápida."
   },
   {
     "number": 3,
     "primary_name": "Marinero",
     "category": "clasica",
-    "synonyms": [
-      "Luna",
-      "Muerto",
-      "Taza",
-      "Ninfa",
-      "Viaje"
-    ]
+    "synonyms": "Luna, Muerto, Taza, Ninfa, Viaje, Barco",
+    "deity": "Yemayá / Virgen de Regla",
+    "accompanying": "21, 54, 73",
+    "description": "El hombre de mar, vinculado a las mareas y a Eleguá abrecaminos."
   },
   {
     "number": 4,
     "primary_name": "Gato",
     "category": "clasica",
-    "synonyms": [
-      "Soldado",
-      "Llave",
-      "Espejo",
-      "Militar",
-      "Preso"
-    ]
+    "synonyms": "Soldado, Llave, Espejo, Militar, Preso",
+    "deity": "Ogún / San Pedro",
+    "accompanying": "24, 40, 84",
+    "description": "Sigilo, agilidad y destreza en momentos difíciles."
   },
   {
     "number": 5,
     "primary_name": "Monja",
     "category": "clasica",
-    "synonyms": [
-      "Periódico",
-      "Mar",
-      "Navaja",
-      "Candela"
-    ]
+    "synonyms": "Periódico, Mar, Navaja, Candela, Carta",
+    "deity": "Obatalá / Virgen de las Mercedes",
+    "accompanying": "15, 25, 55",
+    "description": "Pureza, devoción y noticias que llegan por escrito."
   },
   {
     "number": 6,
     "primary_name": "Jicotea",
     "category": "clasica",
-    "synonyms": [
-      "Carta",
-      "Teléfono",
-      "Botella",
-      "Luna"
-    ]
+    "synonyms": "Carta, Teléfono, Botella, Luna, Mazo",
+    "deity": "Changó / Santa Bárbara",
+    "accompanying": "36, 42, 88",
+    "description": "Sabiduría antigua, paciencia y protección acorazada."
   },
   {
     "number": 7,
     "primary_name": "Caracol",
     "category": "clasica",
-    "synonyms": [
-      "Sueño",
-      "Mierda",
-      "Pintor",
-      "Gallina"
-    ]
+    "synonyms": "Sueño, Pintor, Gallina, Mierda, Llave",
+    "deity": "Yemayá / Virgen de Regla",
+    "accompanying": "14, 49, 70",
+    "description": "El caracol del adivino, comunicación con los orishas."
   },
   {
     "number": 8,
     "primary_name": "Muerto",
     "category": "clasica",
-    "synonyms": [
-      "León",
-      "Calavera",
-      "Dinero",
-      "Vaso"
-    ]
+    "synonyms": "León, Calavera, Dinero, Vaso, Cuadro",
+    "deity": "Oyá / Virgen de la Candelaria",
+    "accompanying": "16, 24, 64",
+    "description": "Espíritus protectores y revelaciones en sueños."
   },
   {
     "number": 9,
     "primary_name": "Elefante",
     "category": "clasica",
-    "synonyms": [
-      "Entierro",
-      "Lengua",
-      "Lira",
-      "Foso"
-    ]
+    "synonyms": "Entierro, Lengua, Lira, Foso, Tambor",
+    "deity": "Obatalá / Virgen de las Mercedes",
+    "accompanying": "19, 45, 90",
+    "description": "Fuerza imperturbable, longevidad y memoria."
   },
   {
     "number": 10,
     "primary_name": "Pescado grande",
     "category": "clasica",
-    "synonyms": [
-      "Cazador",
-      "Desgracia",
-      "Malla",
-      "Red"
-    ]
+    "synonyms": "Cazador, Desgracia, Malla, Red, Barco",
+    "deity": "Yemayá / Virgen de Regla",
+    "accompanying": "18, 23, 70",
+    "description": "Abundancia marina y misterio de las profundidades."
   },
   {
     "number": 11,
     "primary_name": "Gallo",
     "category": "clasica",
-    "synonyms": [
-      "Lluvia",
-      "Barril",
-      "Fábrica",
-      "Caballo"
-    ]
+    "synonyms": "Lluvia, Barril, Fábrica, Caballo, Despertar",
+    "deity": "Changó / Santa Bárbara",
+    "accompanying": "1, 28, 77",
+    "description": "Vigilancia, valentía y anuncio de la luz."
   },
   {
     "number": 12,
     "primary_name": "Mujer santa",
     "category": "clasica",
-    "synonyms": [
-      "Viaje",
-      "Cometa",
-      "Niebla",
-      "Río"
-    ]
+    "synonyms": "Viaje, Cometa, Niebla, Río, Corona",
+    "deity": "Ochún / Caridad del Cobre",
+    "accompanying": "25, 55, 65",
+    "description": "Bendición celestial y protección materna."
   },
   {
     "number": 13,
     "primary_name": "Pavo real",
     "category": "clasica",
-    "synonyms": [
-      "Niño",
-      "Fruta",
-      "Cienpiés",
-      "Elefante"
-    ]
+    "synonyms": "Niño, Fruta, Cienpiés, Elefante, Espejo",
+    "deity": "Ochún / Caridad del Cobre",
+    "accompanying": "2, 38, 75",
+    "description": "Orgullo, esplendor y belleza radiante."
   },
   {
     "number": 14,
     "primary_name": "Gato tigre",
     "category": "clasica",
-    "synonyms": [
-      "Cementerio",
-      "Sartén",
-      "Enamorado"
-    ]
+    "synonyms": "Cementerio, Sartén, Enamorado, Fuego",
+    "deity": "Oyá / Virgen de la Candelaria",
+    "accompanying": "4, 43, 78",
+    "description": "Astucia salvaje y dominio del territorio nocturno."
   },
   {
     "number": 15,
     "primary_name": "Perro",
     "category": "clasica",
-    "synonyms": [
-      "Visita",
-      "Muerto",
-      "Celo",
-      "Cuchillo",
-      "Malvado"
-    ]
+    "synonyms": "Visita, Muerto, Celo, Cuchillo, Malvado",
+    "deity": "Babalú Ayé / San Lázaro",
+    "accompanying": "40, 71, 95",
+    "description": "Lealtad incondicional, visitas inesperadas y aviso."
   },
   {
     "number": 16,
     "primary_name": "Toro",
     "category": "clasica",
-    "synonyms": [
-      "Virgen",
-      "Carta",
-      "Pecho",
-      "Ternero"
-    ]
+    "synonyms": "Virgen, Carta, Pecho, Ternero, Candela",
+    "deity": "Changó / Santa Bárbara",
+    "accompanying": "2, 62, 87",
+    "description": "Poder telúrico, empuje y resistencia."
   },
   {
     "number": 17,
     "primary_name": "Luna",
     "category": "clasica",
-    "synonyms": [
-      "San Lázaro",
-      "Armas",
-      "Médico",
-      "Camisón"
-    ]
+    "synonyms": "San Lázaro, Armas, Médico, Camisón",
+    "deity": "Babalú Ayé / San Lázaro",
+    "accompanying": "3, 33, 77",
+    "description": "Intuición, misterio y curación espiritual."
   },
   {
     "number": 18,
     "primary_name": "Pescadito",
     "category": "clasica",
-    "synonyms": [
-      "Iglesia",
-      "Barco",
-      "Sirena",
-      "Palma"
-    ]
+    "synonyms": "Iglesia, Barco, Sirena, Palma, Río",
+    "deity": "Yemayá / Virgen de Regla",
+    "accompanying": "10, 30, 81",
+    "description": "Pequeños golpes de suerte que alimentan el día."
   },
   {
     "number": 19,
     "primary_name": "Lombriz",
     "category": "clasica",
-    "synonyms": [
-      "Mesa",
-      "Campesino",
-      "Fusil",
-      "Bandera"
-    ]
+    "synonyms": "Mesa, Campesino, Fusil, Bandera, Raíz",
+    "deity": "Ochosi / San Norberto",
+    "accompanying": "9, 46, 91",
+    "description": "Humildad, trabajo subterráneo y constancia."
   },
   {
     "number": 20,
     "primary_name": "Gato fino",
     "category": "clasica",
-    "synonyms": [
-      "Cañón",
-      "Orina",
-      "Libro",
-      "Tiburón"
-    ]
+    "synonyms": "Cañón, Orina, Libro, Tiburón, Seda",
+    "deity": "Ochún / Caridad del Cobre",
+    "accompanying": "4, 14, 56",
+    "description": "Distinción, elegancia y caricias traicioneras."
   },
   {
     "number": 21,
     "primary_name": "Majá",
     "category": "clasica",
-    "synonyms": [
-      "Serpiente",
-      "Culebra",
-      "Dinero",
-      "Cigarro"
-    ]
+    "synonyms": "Serpiente, Culebra, Dinero, Cigarro",
+    "deity": "Eleguá / San Antonio",
+    "accompanying": "3, 54, 99",
+    "description": "Sabiduría oculta y astucia en el dinero."
   },
   {
     "number": 22,
     "primary_name": "Sapo",
     "category": "clasica",
-    "synonyms": [
-      "Estrella",
-      "Lirio",
-      "Chimenea",
-      "Sol"
-    ]
+    "synonyms": "Estrella, Lirio, Chimenea, Sol, Charco",
+    "deity": "Babalú Ayé / San Lázaro",
+    "accompanying": "6, 41, 70",
+    "description": "Transformación mágica y augurio de lluvias."
   },
   {
     "number": 23,
     "primary_name": "Barco",
     "category": "clasica",
-    "synonyms": [
-      "Vapor",
-      "Escalera",
-      "Águila",
-      "Monte"
-    ]
+    "synonyms": "Vapor, Escalera, Águila, Monte, Ancla",
+    "deity": "Yemayá / Virgen de Regla",
+    "accompanying": "3, 10, 81",
+    "description": "Emprendimientos, travesías y puertos seguros."
   },
   {
     "number": 24,
     "primary_name": "Paloma",
     "category": "clasica",
-    "synonyms": [
-      "Música",
-      "Viento",
-      "Carpintero",
-      "Reloj"
-    ]
+    "synonyms": "Música, Viento, Carpintero, Reloj, Paz",
+    "deity": "Obatalá / Virgen de las Mercedes",
+    "accompanying": "1, 4, 80",
+    "description": "Mensaje divino, paz espiritual y serenidad."
   },
   {
     "number": 25,
     "primary_name": "Piedra fina",
     "category": "clasica",
-    "synonyms": [
-      "Casa",
-      "Sol",
-      "Doncella",
-      "Granada"
-    ]
+    "synonyms": "Casa, Sol, Doncella, Granada, Joya",
+    "deity": "Ochún / Caridad del Cobre",
+    "accompanying": "2, 12, 53",
+    "description": "Valor incalculable y tesoros protegidos."
   },
   {
     "number": 26,
     "primary_name": "Anguila",
     "category": "clasica",
-    "synonyms": [
-      "Médico",
-      "Calle",
-      "Nube",
-      "Brillante"
-    ]
+    "synonyms": "Médico, Calle, Nube, Brillante, Escape",
+    "deity": "Yemayá / Virgen de Regla",
+    "accompanying": "18, 45, 92",
+    "description": "Situaciones escurridizas donde reina la astucia."
   },
   {
     "number": 27,
     "primary_name": "Avispa",
     "category": "clasica",
-    "synonyms": [
-      "Canario",
-      "Campana",
-      "Madre",
-      "Iglesia"
-    ]
+    "synonyms": "Canario, Campana, Madre, Iglesia, Aguijón",
+    "deity": "Oyá / Virgen de la Candelaria",
+    "accompanying": "7, 37, 82",
+    "description": "Advertencia de disgustos y picaduras de celos."
   },
   {
     "number": 28,
     "primary_name": "Chivo",
     "category": "clasica",
-    "synonyms": [
-      "Político",
-      "Tabaco",
-      "Disparo",
-      "Uva"
-    ]
+    "synonyms": "Político, Tabaco, Disparo, Uva, Barba",
+    "deity": "Eleguá / San Antonio",
+    "accompanying": "4, 11, 72",
+    "description": "Testarudez, ofrenda y debates acalorados."
   },
   {
     "number": 29,
     "primary_name": "Ratón",
     "category": "clasica",
-    "synonyms": [
-      "Nube",
-      "Venado",
-      "Águila",
-      "Melón"
-    ]
+    "synonyms": "Nube, Venado, Águila, Melón, Queso",
+    "deity": "Eleguá / San Antonio",
+    "accompanying": "31, 35, 97",
+    "description": "Pequeños hurtos y movimientos en la penumbra."
   },
   {
     "number": 30,
     "primary_name": "Camarón",
     "category": "clasica",
-    "synonyms": [
-      "Arcoíris",
-      "Cangrejo",
-      "Monja",
-      "Alfiler"
-    ]
+    "synonyms": "Arcoíris, Cangrejo, Monja, Alfiler, Marea",
+    "deity": "Yemayá / Virgen de Regla",
+    "accompanying": "5, 18, 55",
+    "description": "Cuidado con dormirse en la corriente."
   },
   {
     "number": 31,
     "primary_name": "Venado",
     "category": "clasica",
-    "synonyms": [
-      "Sorpresa",
-      "Escuela",
-      "Soldado",
-      "Carta"
-    ]
+    "synonyms": "Sorpresa, Escuela, Soldado, Carta, Bosque",
+    "deity": "Ochosi / San Norberto",
+    "accompanying": "29, 39, 96",
+    "description": "Velocidad para escapar de trampas y peligros."
   },
   {
     "number": 32,
     "primary_name": "Cochino",
     "category": "clasica",
-    "synonyms": [
-      "Enemigo",
-      "Mula",
-      "Demonio",
-      "Reloj"
-    ]
+    "synonyms": "Enemigo, Mula, Demonio, Reloj, Grasa",
+    "deity": "Ogún / San Pedro",
+    "accompanying": "48, 66, 83",
+    "description": "Abundancia material pero peligro de traición."
   },
   {
     "number": 33,
     "primary_name": "Tiñosa",
     "category": "clasica",
-    "synonyms": [
-      "Muerte",
-      "Baraja",
-      "Huracán",
-      "Luto"
-    ]
+    "synonyms": "Muerte, Baraja, Huracán, Luto, Ceniza",
+    "deity": "Oyá / Virgen de la Candelaria",
+    "accompanying": "8, 17, 98",
+    "description": "Círculos sobre lo que fenece; renovación kármica."
   },
   {
     "number": 34,
     "primary_name": "Mono",
     "category": "clasica",
-    "synonyms": [
-      "Negro",
-      "Familia",
-      "Sombrero",
-      "Lotería"
-    ]
+    "synonyms": "Negro, Familia, Sombrero, Lotería, Burla",
+    "deity": "Eleguá / San Antonio",
+    "accompanying": "42, 60, 93",
+    "description": "Imitación, travesuras y golpes de suerte."
   },
   {
     "number": 35,
     "primary_name": "Araña",
     "category": "clasica",
-    "synonyms": [
-      "Bombillo",
-      "Herradura",
-      "Marinero",
-      "Zapato"
-    ]
+    "synonyms": "Bombillo, Herradura, Marinero, Zapato, Red",
+    "deity": "Oyá / Virgen de la Candelaria",
+    "accompanying": "3, 29, 43",
+    "description": "Tejedora de destinos y paciencia matemática."
   },
   {
     "number": 36,
     "primary_name": "Colibrí",
     "category": "clasica",
-    "synonyms": [
-      "Pajarito",
-      "Brujo",
-      "Cueva",
-      "Flecha"
-    ]
+    "synonyms": "Pajarito, Brujo, Cueva, Flecha, Miel",
+    "deity": "Ochún / Caridad del Cobre",
+    "accompanying": "6, 47, 85",
+    "description": "Alegría fugaz, velocidad y encanto."
   },
   {
     "number": 37,
     "primary_name": "Brujería",
     "category": "clasica",
-    "synonyms": [
-      "Gallina",
-      "Hormiga",
-      "Piedra",
-      "Policía"
-    ]
+    "synonyms": "Gallina, Hormiga, Piedra, Policía, Hechizo",
+    "deity": "Eleguá / San Antonio",
+    "accompanying": "7, 27, 99",
+    "description": "Fuerzas ocultas en acción y advertencia espiritual."
   },
   {
     "number": 38,
     "primary_name": "Macao",
     "category": "clasica",
-    "synonyms": [
-      "Guardián",
-      "Dinero",
-      "Reloj",
-      "Carretilla"
-    ]
+    "synonyms": "Guardián, Dinero, Reloj, Carretilla, Concha",
+    "deity": "Yemayá / Virgen de Regla",
+    "accompanying": "13, 50, 78",
+    "description": "Resguardo seguro y protección económica."
   },
   {
     "number": 39,
     "primary_name": "Conejo",
     "category": "clasica",
-    "synonyms": [
-      "Rayo",
-      "Baile",
-      "Tinta",
-      "Serpiente"
-    ]
+    "synonyms": "Rayo, Baile, Tinta, Serpiente, Huerto",
+    "deity": "Ochosi / San Norberto",
+    "accompanying": "7, 31, 77",
+    "description": "Fertilidad, saltos audaces y agilidad mental."
   },
   {
     "number": 40,
     "primary_name": "Cura",
     "category": "clasica",
-    "synonyms": [
-      "Santo",
-      "Campanario",
-      "Sangre",
-      "Barba"
-    ]
+    "synonyms": "Santo, Campanario, Sangre, Barba, Misa",
+    "deity": "Obatalá / Virgen de las Mercedes",
+    "accompanying": "4, 15, 84",
+    "description": "Consejo sabio, bendición y reflexión moral."
   },
   {
     "number": 41,
     "primary_name": "Lagartija",
     "category": "clasica",
-    "synonyms": [
-      "Prisión",
-      "Pato",
-      "Relámpago",
-      "Muerte"
-    ]
+    "synonyms": "Prisión, Pato, Relámpago, Muerte, Muro",
+    "deity": "Ochosi / San Norberto",
+    "accompanying": "22, 67, 79",
+    "description": "Adaptabilidad a los muros y calor del sol."
   },
   {
     "number": 42,
     "primary_name": "Pato",
     "category": "clasica",
-    "synonyms": [
-      "País",
-      "Abogado",
-      "Cama",
-      "Joya"
-    ]
+    "synonyms": "País, Abogado, Cama, Joya, Laguna",
+    "deity": "Yemayá / Virgen de Regla",
+    "accompanying": "6, 34, 88",
+    "description": "Tranquilidad en la superficie con nado firme."
   },
   {
     "number": 43,
     "primary_name": "Alacrán",
     "category": "clasica",
-    "synonyms": [
-      "Amigo",
-      "Puñal",
-      "Ventana",
-      "Espejo"
-    ]
+    "synonyms": "Amigo, Puñal, Ventana, Espejo, Veneno",
+    "deity": "Ogún / San Pedro",
+    "accompanying": "14, 35, 73",
+    "description": "Cuidado con falsas amistades que portan puñal."
   },
   {
     "number": 44,
     "primary_name": "Año malo",
     "category": "clasica",
-    "synonyms": [
-      "Tempestad",
-      "Desgracia",
-      "Fruta",
-      "Hierro"
-    ]
+    "synonyms": "Tempestad, Desgracia, Fruta, Hierro, Crisis",
+    "deity": "Oyá / Virgen de la Candelaria",
+    "accompanying": "58, 83, 98",
+    "description": "Pruebas de carácter y resistencia en la tormenta."
   },
   {
     "number": 45,
     "primary_name": "Tiburón",
     "category": "clasica",
-    "synonyms": [
-      "Presidente",
-      "Policía",
-      "Navaja",
-      "Zapato"
-    ]
+    "synonyms": "Presidente, Policía, Navaja, Zapato, Mandíbula",
+    "deity": "Yemayá / Virgen de Regla",
+    "accompanying": "9, 26, 90",
+    "description": "Fuerza implacable en negocios y justicia."
   },
   {
     "number": 46,
     "primary_name": "Guajiro",
     "category": "clasica",
-    "synonyms": [
-      "Humo",
-      "Sombrero",
-      "Salto",
-      "Palma"
-    ]
+    "synonyms": "Humo, Sombrero, Salto, Palma, Tabacal",
+    "deity": "Ochosi / San Norberto",
+    "accompanying": "19, 72, 87",
+    "description": "Trabajador noble de la tierra con sabiduría campechana."
   },
   {
     "number": 47,
     "primary_name": "Pájaro",
     "category": "clasica",
-    "synonyms": [
-      "Mundo",
-      "Rosa",
-      "Escopeta",
-      "Volcán"
-    ]
+    "synonyms": "Mundo, Rosa, Escopeta, Volcán, Nido",
+    "deity": "Obatalá / Virgen de las Mercedes",
+    "accompanying": "36, 54, 91",
+    "description": "Libertad, vuelos elevados y nuevos horizontes."
   },
   {
     "number": 48,
     "primary_name": "Cucaracha",
     "category": "clasica",
-    "synonyms": [
-      "Accidente",
-      "Miedo",
-      "Agua",
-      "Reloj"
-    ]
+    "synonyms": "Accidente, Miedo, Agua, Reloj, Grieta",
+    "deity": "Oyá / Virgen de la Candelaria",
+    "accompanying": "32, 57, 85",
+    "description": "Supervivencia tenaz ante la adversidad."
   },
   {
     "number": 49,
     "primary_name": "Borracho",
     "category": "clasica",
-    "synonyms": [
-      "Pluma",
-      "Percha",
-      "Llave",
-      "Látigo"
-    ]
+    "synonyms": "Pluma, Percha, Llave, Látigo, Botella",
+    "deity": "Osain / San Silvestre",
+    "accompanying": "7, 65, 89",
+    "description": "Desinhibición, verdades cantadas y extravío."
   },
   {
     "number": 50,
     "primary_name": "Policía",
     "category": "clasica",
-    "synonyms": [
-      "Flor",
-      "Agua",
-      "Cautiverio",
-      "Candado"
-    ]
+    "synonyms": "Flor, Agua, Cautiverio, Candado, Placa",
+    "deity": "Ochosi / San Norberto",
+    "accompanying": "38, 63, 85",
+    "description": "Autoridad, orden y vigilancia de caminos."
   },
   {
     "number": 51,
     "primary_name": "Soldado",
     "category": "clasica",
-    "synonyms": [
-      "Oggún",
-      "Hierro",
-      "Sereno",
-      "Sed"
-    ]
+    "synonyms": "Oggún, Hierro, Sereno, Sed, Escudo",
+    "deity": "Ogún / San Pedro",
+    "accompanying": "4, 71, 95",
+    "description": "Disciplina, batalla ganada y protección física."
   },
   {
     "number": 52,
     "primary_name": "Bicicleta",
     "category": "clasica",
-    "synonyms": [
-      "Coche",
-      "Abogado",
-      "Rueda",
-      "Libreta"
-    ]
+    "synonyms": "Coche, Abogado, Rueda, Libreta, Equilibrio",
+    "deity": "Eleguá / San Antonio",
+    "accompanying": "1, 62, 79",
+    "description": "Avance mediante el esfuerzo propio constante."
   },
   {
     "number": 53,
     "primary_name": "Luz",
     "category": "clasica",
-    "synonyms": [
-      "Prenda",
-      "Trono",
-      "Diamante",
-      "Tragedia"
-    ]
+    "synonyms": "Prenda, Trono, Diamante, Tragedia, Faro",
+    "deity": "Obatalá / Virgen de las Mercedes",
+    "accompanying": "25, 59, 84",
+    "description": "Claridad mental que disipa las tinieblas."
   },
   {
     "number": 54,
     "primary_name": "Flores",
     "category": "clasica",
-    "synonyms": [
-      "Cañón",
-      "Espada",
-      "Sueño",
-      "Tambor"
-    ]
+    "synonyms": "Cañón, Espada, Sueño, Tambor, Jardín",
+    "deity": "Ochún / Caridad del Cobre",
+    "accompanying": "3, 21, 73",
+    "description": "Ofrenda de amor, fragancia y reconciliación."
   },
   {
     "number": 55,
     "primary_name": "Cangrejo",
     "category": "clasica",
-    "synonyms": [
-      "Isla",
-      "Espejo",
-      "Fuego",
-      "Policía"
-    ]
+    "synonyms": "Isla, Espejo, Fuego, Policía, Muelle",
+    "deity": "Yemayá / Virgen de Regla",
+    "accompanying": "5, 12, 30",
+    "description": "Pasos laterales necesarios antes del gran avance."
   },
   {
     "number": 56,
     "primary_name": "Reina",
     "category": "clasica",
-    "synonyms": [
-      "Meretriz",
-      "Mariposa",
-      "Camisa",
-      "Cara"
-    ]
+    "synonyms": "Meretriz, Mariposa, Camisa, Cara, Corona",
+    "deity": "Ochún / Caridad del Cobre",
+    "accompanying": "20, 68, 82",
+    "description": "Elegancia suprema y magnetismo irresistible."
   },
   {
     "number": 57,
     "primary_name": "Cama",
     "category": "clasica",
-    "synonyms": [
-      "Telegrama",
-      "Noche",
-      "Puerta",
-      "Novia"
-    ]
+    "synonyms": "Telegrama, Noche, Puerta, Novia, Reposo",
+    "deity": "Yemayá / Virgen de Regla",
+    "accompanying": "48, 80, 97",
+    "description": "Descanso reparador o indisposición pasajera."
   },
   {
     "number": 58,
     "primary_name": "Adulterio",
     "category": "clasica",
-    "synonyms": [
-      "Retrato",
-      "Cruz",
-      "Cangrejo",
-      "Vaso"
-    ]
+    "synonyms": "Retrato, Cruz, Cangrejo, Vaso, Secreto",
+    "deity": "Changó / Santa Bárbara",
+    "accompanying": "44, 75, 94",
+    "description": "Doble juego que exige prudencia absoluta."
   },
   {
     "number": 59,
     "primary_name": "Loco",
     "category": "clasica",
-    "synonyms": [
-      "Fonógrafo",
-      "Calavera",
-      "Moneda",
-      "Culebra"
-    ]
+    "synonyms": "Fonógrafo, Calavera, Moneda, Culebra, Risa",
+    "deity": "Eleguá / San Antonio",
+    "accompanying": "53, 66, 89",
+    "description": "Ideas fuera de lo común que traen éxito sorpresivo."
   },
   {
     "number": 60,
     "primary_name": "Payaso",
     "category": "clasica",
-    "synonyms": [
-      "Sol",
-      "Comiquita",
-      "Huevo",
-      "Tambor"
-    ]
+    "synonyms": "Sol, Comiquita, Huevo, Tambor, Sonrisa",
+    "deity": "Eleguá / San Antonio",
+    "accompanying": "34, 75, 92",
+    "description": "Alegría compartida que maquilla las penas."
   },
   {
     "number": 61,
     "primary_name": "Cañón",
     "category": "clasica",
-    "synonyms": [
-      "Piedra",
-      "Escopeta",
-      "Soldado",
-      "Tijera"
-    ]
+    "synonyms": "Piedra, Escopeta, Soldado, Tijera, Pólvora",
+    "deity": "Changó / Santa Bárbara",
+    "accompanying": "16, 51, 87",
+    "description": "Determinación fulminante en el momento decisivo."
   },
   {
     "number": 62,
     "primary_name": "Matrimonio",
     "category": "clasica",
-    "synonyms": [
-      "Nieve",
-      "Lámpara",
-      "Carretera",
-      "Toro"
-    ]
+    "synonyms": "Nieve, Lámpara, Carretera, Toro, Alianza",
+    "deity": "Ochún / Caridad del Cobre",
+    "accompanying": "16, 52, 93",
+    "description": "Unión bendecida y compromisos duraderos."
   },
   {
     "number": 63,
     "primary_name": "Asesino",
     "category": "clasica",
-    "synonyms": [
-      "Bandido",
-      "Escalera",
-      "Cuerno",
-      "Policía"
-    ]
+    "synonyms": "Bandido, Escalera, Cuerno, Policía, Sombras",
+    "deity": "Ogún / San Pedro",
+    "accompanying": "43, 50, 76",
+    "description": "Precaución ante intenciones desleales ajenas."
   },
   {
     "number": 64,
     "primary_name": "Muerto grande",
     "category": "clasica",
-    "synonyms": [
-      "Falso",
-      "Reloj",
-      "Campana",
-      "Tiro"
-    ]
+    "synonyms": "Falso, Reloj, Campana, Tiro, Gran espíritu",
+    "deity": "Oyá / Virgen de la Candelaria",
+    "accompanying": "8, 16, 80",
+    "description": "Presencia de un ancestro venerable y protector."
   },
   {
     "number": 65,
     "primary_name": "Comida",
     "category": "clasica",
-    "synonyms": [
-      "Oshún",
-      "Brujo",
-      "Cárcel",
-      "Cazuela"
-    ]
+    "synonyms": "Oshún, Brujo, Cárcel, Cazuela, Banquete",
+    "deity": "Ochún / Caridad del Cobre",
+    "accompanying": "12, 49, 84",
+    "description": "Celebración, mesa servida y prosperidad del hogar."
   },
   {
     "number": 66,
     "primary_name": "Diablo",
     "category": "clasica",
-    "synonyms": [
-      "Carnaval",
-      "Máscara",
-      "Pozo",
-      "Carbón"
-    ]
+    "synonyms": "Carnaval, Máscara, Pozo, Carbón, Fuego",
+    "deity": "Eleguá / San Antonio",
+    "accompanying": "32, 59, 83",
+    "description": "Tentaciones tentadoras que requieren templanza."
   },
   {
     "number": 67,
     "primary_name": "Puñalada",
     "category": "clasica",
-    "synonyms": [
-      "Relámpago",
-      "Autoridad",
-      "Herida",
-      "Reloj"
-    ]
+    "synonyms": "Relámpago, Autoridad, Herida, Reloj, Tajo",
+    "deity": "Ogún / San Pedro",
+    "accompanying": "41, 73, 94",
+    "description": "Corte tajante de situaciones insostenibles."
   },
   {
     "number": 68,
     "primary_name": "Grande",
     "category": "clasica",
-    "synonyms": [
-      "Templo",
-      "Globo",
-      "Circo",
-      "Palma"
-    ]
+    "synonyms": "Templo, Globo, Circo, Palma, Altura",
+    "deity": "Obatalá / Virgen de las Mercedes",
+    "accompanying": "56, 78, 88",
+    "description": "Crecimiento, proyectos monumentales y respeto."
   },
   {
     "number": 69,
     "primary_name": "Pozo",
     "category": "clasica",
-    "synonyms": [
-      "Fango",
-      "Barco",
-      "Reloj",
-      "Río"
-    ]
+    "synonyms": "Fango, Barco, Reloj, Río, Hondo",
+    "deity": "Yemayá / Virgen de Regla",
+    "accompanying": "23, 70, 99",
+    "description": "Profundidades emocionales y secretos guardados."
   },
   {
     "number": 70,
     "primary_name": "Teléfono",
     "category": "clasica",
-    "synonyms": [
-      "Tiro",
-      "Barril",
-      "Sapo",
-      "Arco"
-    ]
+    "synonyms": "Tiro, Barril, Sapo, Arco, Llamada",
+    "deity": "Eleguá / San Antonio",
+    "accompanying": "7, 18, 22",
+    "description": "Llamada decisiva con noticias de fortuna."
   },
   {
     "number": 71,
     "primary_name": "Fusil",
     "category": "clasica",
-    "synonyms": [
-      "Perro",
-      "Sombrero",
-      "Soldado",
-      "Baile"
-    ]
+    "synonyms": "Perro, Sombrero, Soldado, Baile, Puntería",
+    "deity": "Ogún / San Pedro",
+    "accompanying": "15, 51, 95",
+    "description": "Defensa de lo propio y puntería afinada."
   },
   {
     "number": 72,
     "primary_name": "Buey",
     "category": "clasica",
-    "synonyms": [
-      "Collar",
-      "Ferrocarril",
-      "Jarro",
-      "Látigo"
-    ]
+    "synonyms": "Collar, Ferrocarril, Jarro, Látigo, Yunta",
+    "deity": "Babalú Ayé / San Lázaro",
+    "accompanying": "28, 46, 79",
+    "description": "Fuerza tranquila y trabajo incansable."
   },
   {
     "number": 73,
     "primary_name": "Navaja",
     "category": "clasica",
-    "synonyms": [
-      "Corte",
-      "Manzana",
-      "Parque",
-      "Bandera"
-    ]
+    "synonyms": "Corte, Manzana, Parque, Bandera, Filo",
+    "deity": "Ogún / San Pedro",
+    "accompanying": "3, 43, 67",
+    "description": "Decisiones rápidas y corte de lazos dañinos."
   },
   {
     "number": 74,
     "primary_name": "Papalote",
     "category": "clasica",
-    "synonyms": [
-      "Militar",
-      "Serpiente",
-      "Ruina",
-      "Corona"
-    ]
+    "synonyms": "Militar, Serpiente, Ruina, Corona, Viento",
+    "deity": "Oyá / Virgen de la Candelaria",
+    "accompanying": "2, 77, 92",
+    "description": "Elevación espiritual con los pies en la tierra."
   },
   {
     "number": 75,
     "primary_name": "Cine",
     "category": "clasica",
-    "synonyms": [
-      "Guitarra",
-      "Pito",
-      "Novio",
-      "Estrella"
-    ]
+    "synonyms": "Guitarra, Pito, Novio, Estrella, Película",
+    "deity": "Ochún / Caridad del Cobre",
+    "accompanying": "13, 58, 60",
+    "description": "Fantasía, entretenimiento y revelaciones."
   },
   {
     "number": 76,
     "primary_name": "Humo",
     "category": "clasica",
-    "synonyms": [
-      "Hierro",
-      "Bomba",
-      "Pájaro",
-      "Reloj"
-    ]
+    "synonyms": "Hierro, Bomba, Pájaro, Reloj, Neblina",
+    "deity": "Oyá / Virgen de la Candelaria",
+    "accompanying": "63, 85, 96",
+    "description": "Señales que anuncian fuego o cambios de viento."
   },
   {
     "number": 77,
     "primary_name": "Banderas",
     "category": "clasica",
-    "synonyms": [
-      "Yúa",
-      "Muletas",
-      "Guerra",
-      "Trono"
-    ]
+    "synonyms": "Yúa, Muletas, Guerra, Trono, Triunfo",
+    "deity": "Changó / Santa Bárbara",
+    "accompanying": "11, 17, 39",
+    "description": "Victoria en causas justas y orgullo legítimo."
   },
   {
     "number": 78,
     "primary_name": "Obispo",
     "category": "clasica",
-    "synonyms": [
-      "Sarcófago",
-      "Ataúd",
-      "Luna",
-      "Viento"
-    ]
+    "synonyms": "Sarcófago, Ataúd, Luna, Viento, Mitra",
+    "deity": "Obatalá / Virgen de las Mercedes",
+    "accompanying": "14, 38, 68",
+    "description": "Autoridad religiosa y consejo solemne."
   },
   {
     "number": 79,
     "primary_name": "Tren",
     "category": "clasica",
-    "synonyms": [
-      "Coche",
-      "Abogado",
-      "Lagarto",
-      "Botella"
-    ]
+    "synonyms": "Coche, Abogado, Lagarto, Botella, Rieles",
+    "deity": "Ogún / San Pedro",
+    "accompanying": "1, 41, 52",
+    "description": "Viaje seguro hacia metas ambiciosas sobre rieles."
   },
   {
     "number": 80,
     "primary_name": "Vieja",
     "category": "clasica",
-    "synonyms": [
-      "Buena suerte",
-      "Trompo",
-      "Cama",
-      "Sol"
-    ]
+    "synonyms": "Buena suerte, Trompo, Cama, Sol, Abuela",
+    "deity": "Obatalá / Virgen de las Mercedes",
+    "accompanying": "24, 57, 64",
+    "description": "Sabiduría ancestral, bendición de abuela y fortuna."
   },
   {
     "number": 81,
     "primary_name": "Teatro",
     "category": "clasica",
-    "synonyms": [
-      "Actor",
-      "Ingeniero",
-      "Barco",
-      "Reloj"
-    ]
+    "synonyms": "Actor, Ingeniero, Barco, Reloj, Escenario",
+    "deity": "Ochún / Caridad del Cobre",
+    "accompanying": "18, 23, 75",
+    "description": "Representaciones sociales y éxito de imagen."
   },
   {
     "number": 82,
     "primary_name": "Madre",
     "category": "clasica",
-    "synonyms": [
-      "León",
-      "Bautizo",
-      "Tragedia",
-      "Flor"
-    ]
+    "synonyms": "León, Bautizo, Tragedia, Flor, Amor",
+    "deity": "Yemayá / Virgen de Regla",
+    "accompanying": "27, 56, 88",
+    "description": "Amor protector incondicional y refugio seguro."
   },
   {
     "number": 83,
     "primary_name": "Tragedia",
     "category": "clasica",
-    "synonyms": [
-      "Limosnero",
-      "Madera",
-      "Bastón",
-      "Muerte"
-    ]
+    "synonyms": "Limosnero, Madera, Bastón, Muerte, Choque",
+    "deity": "Oyá / Virgen de la Candelaria",
+    "accompanying": "32, 44, 66",
+    "description": "Superación de adversidades mediante la fe."
   },
   {
     "number": 84,
     "primary_name": "Sangre",
     "category": "clasica",
-    "synonyms": [
-      "Ciego",
-      "Banquete",
-      "Hacha",
-      "Oro"
-    ]
+    "synonyms": "Ciego, Banquete, Hacha, Oro, Linaje",
+    "deity": "Changó / Santa Bárbara",
+    "accompanying": "4, 40, 65",
+    "description": "Lazos familiares estrechos y pasión desbordante."
   },
   {
     "number": 85,
     "primary_name": "Reloj",
     "category": "clasica",
-    "synonyms": [
-      "Tiempo",
-      "Espejo",
-      "Águila",
-      "Policía"
-    ]
+    "synonyms": "Tiempo, Espejo, Águila, Policía, Minutero",
+    "deity": "Obatalá / Virgen de las Mercedes",
+    "accompanying": "36, 48, 50",
+    "description": "La hora propicia ha llegado; puntualidad sagrada."
   },
   {
     "number": 86,
     "primary_name": "Convento",
     "category": "clasica",
-    "synonyms": [
-      "Tijeras",
-      "Monja",
-      "Fuego",
-      "Carretilla"
-    ]
+    "synonyms": "Tijeras, Monja, Fuego, Carretilla, Silencio",
+    "deity": "Obatalá / Virgen de las Mercedes",
+    "accompanying": "5, 40, 80",
+    "description": "Retiro prudente y tranquilidad de conciencia."
   },
   {
     "number": 87,
     "primary_name": "Plátano",
     "category": "clasica",
-    "synonyms": [
-      "Fuego",
-      "Toro",
-      "Espada",
-      "Cueva"
-    ]
+    "synonyms": "Fuego, Toro, Espada, Cueva, Racimo",
+    "deity": "Changó / Santa Bárbara",
+    "accompanying": "16, 46, 61",
+    "description": "Ofrenda fértil y fortaleza en el tronco."
   },
   {
     "number": 88,
     "primary_name": "Hojas",
     "category": "clasica",
-    "synonyms": [
-      "Aduana",
-      "Trompeta",
-      "Muerte",
-      "Vidrio"
-    ]
+    "synonyms": "Aduana, Trompeta, Muerte, Vidrio, Viento",
+    "deity": "Osain / San Silvestre",
+    "accompanying": "6, 42, 68",
+    "description": "Hierbas medicinales y baños de despojo."
   },
   {
     "number": 89,
     "primary_name": "Cometa",
     "category": "clasica",
-    "synonyms": [
-      "Lotería",
-      "Melón",
-      "Anciano",
-      "Tambor"
-    ]
+    "synonyms": "Lotería, Melón, Anciano, Tambor, Cola",
+    "deity": "Oyá / Virgen de la Candelaria",
+    "accompanying": "49, 59, 92",
+    "description": "Golpe de suerte celestial que cruza el cielo."
   },
   {
     "number": 90,
     "primary_name": "Viejo",
     "category": "clasica",
-    "synonyms": [
-      "Esclavo",
-      "Dinero",
-      "Cruz",
-      "Espejo"
-    ]
+    "synonyms": "Esclavo, Dinero, Cruz, Espejo, Bastón",
+    "deity": "Babalú Ayé / San Lázaro",
+    "accompanying": "9, 45, 98",
+    "description": "Experiencia vivida, consejo y respeto a mayores."
   },
   {
     "number": 91,
     "primary_name": "Tranvía",
     "category": "clasica",
-    "synonyms": [
-      "Pájaro",
-      "Limosna",
-      "Bolso",
-      "Carta"
-    ]
+    "synonyms": "Pájaro, Limosna, Bolso, Carta, Rueda",
+    "deity": "Eleguá / San Antonio",
+    "accompanying": "19, 47, 52",
+    "description": "Camino trazado sin desvíos hacia el destino."
   },
   {
     "number": 92,
     "primary_name": "Avión",
     "category": "clasica",
-    "synonyms": [
-      "Globo",
-      "Estrella",
-      "Cuba",
-      "Nube"
-    ]
+    "synonyms": "Globo, Estrella, Cuba, Nube, Vuelo",
+    "deity": "Obatalá / Virgen de las Mercedes",
+    "accompanying": "26, 60, 74",
+    "description": "Grandes aspiraciones que toman altura."
   },
   {
     "number": 93,
     "primary_name": "Sortija",
     "category": "clasica",
-    "synonyms": [
-      "Revolución",
-      "General",
-      "Joya",
-      "Anillo"
-    ]
+    "synonyms": "Revolución, General, Joya, Anillo, Oro",
+    "deity": "Ochún / Caridad del Cobre",
+    "accompanying": "25, 34, 62",
+    "description": "Compromiso de palabra y alianza virtuosa."
   },
   {
     "number": 94,
     "primary_name": "Machete",
     "category": "clasica",
-    "synonyms": [
-      "Mariposa",
-      "Habana",
-      "Cuchillo",
-      "Flores"
-    ]
+    "synonyms": "Mariposa, Habana, Cuchillo, Flores, Caña",
+    "deity": "Ogún / San Pedro",
+    "accompanying": "2, 58, 67",
+    "description": "Abrecaminos en la manigua y corte decisivo."
   },
   {
     "number": 95,
     "primary_name": "Guerra",
     "category": "clasica",
-    "synonyms": [
-      "Perro grande",
-      "Espada",
-      "Dragón",
-      "Fuego"
-    ]
+    "synonyms": "Perro grande, Espada, Dragón, Fuego, Lucha",
+    "deity": "Ogún / San Pedro",
+    "accompanying": "15, 51, 71",
+    "description": "Batalla por tus derechos donde triunfa la verdad."
   },
   {
     "number": 96,
     "primary_name": "Desafío",
     "category": "clasica",
-    "synonyms": [
-      "Zapato",
-      "Médico",
-      "Pavo",
-      "Bandera"
-    ]
+    "synonyms": "Zapato, Médico, Pavo, Bandera, Duelo",
+    "deity": "Changó / Santa Bárbara",
+    "accompanying": "31, 76, 84",
+    "description": "Aceptación valiente de retos trascendentales."
   },
   {
     "number": 97,
     "primary_name": "Grillo",
     "category": "clasica",
-    "synonyms": [
-      "Limosnero",
-      "Manta",
-      "Viejo",
-      "Miedo"
-    ]
+    "synonyms": "Limosnero, Manta, Viejo, Miedo, Canto",
+    "deity": "Eleguá / San Antonio",
+    "accompanying": "29, 57, 80",
+    "description": "Canto que alegra la noche y guía en lo oscuro."
   },
   {
     "number": 98,
     "primary_name": "Entierro",
     "category": "clasica",
-    "synonyms": [
-      "Traición",
-      "Santo",
-      "Piano",
-      "Muerto"
-    ]
+    "synonyms": "Traición, Santo, Piano, Muerto, Fin",
+    "deity": "Oyá / Virgen de la Candelaria",
+    "accompanying": "8, 33, 44",
+    "description": "Cierre definitivo de etapas pasadas; renacimiento."
   },
   {
     "number": 99,
     "primary_name": "Serpiente",
     "category": "clasica",
-    "synonyms": [
-      "Carbonero",
-      "Pozo",
-      "Brujo",
-      "Cueva"
-    ]
+    "synonyms": "Carbonero, Pozo, Brujo, Cueva, Escama",
+    "deity": "Eleguá / San Antonio",
+    "accompanying": "21, 37, 69",
+    "description": "Transformación total y astucia instintiva."
   },
   {
     "number": 100,
     "primary_name": "Dios",
     "category": "clasica",
-    "synonyms": [
-      "Inodoro",
-      "Escoba",
-      "Muerte",
-      "Fin"
-    ]
+    "synonyms": "Inodoro, Escoba, Muerte, Fin, Corona",
+    "deity": "Olofin / Olodumare",
+    "accompanying": "1, 12, 80",
+    "description": "El Todo, la causa primera y la bendición infinita."
   }
 ]

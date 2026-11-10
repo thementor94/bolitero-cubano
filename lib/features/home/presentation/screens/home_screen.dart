@@ -4,6 +4,10 @@ import '../../../../core/widgets/bola.dart';
 import '../../../../core/widgets/offline_banner.dart';
 import '../../../../data/models/draw_model.dart';
 import '../../../../data/repositories/draw_repository.dart';
+import '../../../community/presentation/screens/poll_screen.dart';
+import '../../../history/presentation/screens/history_screen.dart';
+import '../../../more/presentation/screens/settings_screen.dart';
+import '../../../tools/presentation/screens/tools_screen.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -29,20 +33,22 @@ class _HomeScreenState extends State<HomeScreen> {
     setState(() => _isLoading = true);
     final flN = await _drawRepo.getLatestDraw(lottery: 'florida', period: 'evening');
     final flM = await _drawRepo.getLatestDraw(lottery: 'florida', period: 'midday');
-    final all = await _drawRepo.getRecentDraws(limit: 10);
+    final all = await _drawRepo.getRecentDraws(limit: 15);
     final others = all.where((d) => d.lottery != 'florida').toList();
 
-    setState(() {
-      _flNight = flN;
-      _flMidday = flM;
-      _otherDraws = others;
-      _isLoading = false;
-    });
+    if (mounted) {
+      setState(() {
+        _flNight = flN;
+        _flMidday = flM;
+        _otherDraws = others;
+        _isLoading = false;
+      });
+    }
   }
 
   Widget _buildFeaturedCard(String title, DrawModel? draw, String fallbackTime) {
     return Container(
-      margin: const EdgeInsets.only(bottom: 12),
+      margin: const EdgeInsets.only(bottom: 14),
       padding: const EdgeInsets.all(16),
       decoration: BoxDecoration(
         color: AppColors.card,
@@ -127,6 +133,40 @@ class _HomeScreenState extends State<HomeScreen> {
                 ),
               ),
             ),
+            const SizedBox(height: 12),
+            const Divider(color: AppColors.border, height: 1),
+            const SizedBox(height: 8),
+
+            // Botones de acción rápida
+            Row(
+              mainAxisAlignment: MainAxisAlignment.end,
+              children: [
+                TextButton.icon(
+                  icon: const Icon(Icons.calculate_outlined, size: 14, color: AppColors.gold),
+                  label: const Text("En Pirámide", style: TextStyle(fontSize: 11, color: AppColors.gold)),
+                  onPressed: () {
+                    Navigator.of(context).push(
+                      MaterialPageRoute(
+                        builder: (_) => ToolsScreen(initialPyramidSeed: draw.centena),
+                      ),
+                    );
+                  },
+                ),
+                const SizedBox(width: 8),
+                TextButton.icon(
+                  icon: const Icon(Icons.history, size: 14, color: AppColors.turquoise),
+                  label: const Text("En Historial", style: TextStyle(fontSize: 11, color: AppColors.turquoise)),
+                  onPressed: () {
+                    final d = DateTime.tryParse(draw.drawDate);
+                    Navigator.of(context).push(
+                      MaterialPageRoute(
+                        builder: (_) => HistoryScreen(initialDate: d),
+                      ),
+                    );
+                  },
+                ),
+              ],
+            ),
           ] else ...[
             const Padding(
               padding: EdgeInsets.symmetric(vertical: 16.0),
@@ -156,7 +196,26 @@ class _HomeScreenState extends State<HomeScreen> {
         ),
         actions: [
           IconButton(
-            icon: const Icon(Icons.refresh, color: AppColors.text),
+            icon: const Icon(Icons.poll_outlined, color: AppColors.text),
+            tooltip: "Encuesta del Día",
+            onPressed: () {
+              Navigator.of(context).push(
+                MaterialPageRoute(builder: (_) => const PollScreen()),
+              );
+            },
+          ),
+          IconButton(
+            icon: const Icon(Icons.settings_outlined, color: AppColors.text),
+            tooltip: "Configuración",
+            onPressed: () {
+              Navigator.of(context).push(
+                MaterialPageRoute(builder: (_) => const SettingsScreen()),
+              );
+            },
+          ),
+          IconButton(
+            icon: const Icon(Icons.refresh, color: AppColors.gold),
+            tooltip: "Actualizar Sorteos",
             onPressed: () async {
               await _drawRepo.syncFromCdn();
               await _loadData();
@@ -179,14 +238,21 @@ class _HomeScreenState extends State<HomeScreen> {
                     child: ListView(
                       padding: const EdgeInsets.all(16),
                       children: [
-                        _buildFeaturedCard("Florida · Noche", _flNight, "9:45 PM"),
-                        _buildFeaturedCard("Florida · Tarde", _flMidday, "1:30 PM"),
-                        const SizedBox(height: 8),
-                        const Text("Otros Sorteos", style: TextStyle(fontSize: 14, fontWeight: FontWeight.bold, color: AppColors.text)),
-                        const SizedBox(height: 8),
+                        _buildFeaturedCard("Florida Noche", _flNight, "9:45 PM"),
+                        _buildFeaturedCard("Florida Tarde", _flMidday, "1:30 PM"),
+                        const SizedBox(height: 10),
+                        const Text(
+                          "Otras Loterías Oficiales (Georgia & New York)",
+                          style: TextStyle(
+                            fontSize: 14,
+                            fontWeight: FontWeight.bold,
+                            color: AppColors.textMuted,
+                          ),
+                        ),
+                        const SizedBox(height: 10),
                         ..._otherDraws.map((d) => Container(
                               margin: const EdgeInsets.only(bottom: 8),
-                              padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 10),
+                              padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 12),
                               decoration: BoxDecoration(
                                 color: AppColors.card,
                                 borderRadius: BorderRadius.circular(12),
@@ -202,7 +268,7 @@ class _HomeScreenState extends State<HomeScreen> {
                                         "${d.lottery.toUpperCase()} · ${d.period.toUpperCase()}",
                                         style: const TextStyle(fontSize: 12, fontWeight: FontWeight.bold, color: AppColors.text),
                                       ),
-                                      Text(d.drawTime ?? '', style: const TextStyle(fontSize: 10, color: AppColors.textMuted)),
+                                      Text("${d.drawDate} · ${d.drawTime ?? ''}", style: const TextStyle(fontSize: 10, color: AppColors.textMuted)),
                                     ],
                                   ),
                                   Row(

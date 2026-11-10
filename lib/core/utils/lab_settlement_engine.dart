@@ -4,8 +4,8 @@ class LabSettlementEngine {
   /// - Fijo: 70x
   /// - Centena: 300x
   /// - Corrido: 20x por cada aparición en corridos (hasta 40x)
-  /// - Parlé Fijo + Corrido: 900x (o 1000x según banquero)
-  /// - Parlé Corrido + Corrido: 100x
+  /// - Parlé Fijo + Corrido: 900x (o 1000x según banquero/región)
+  /// - Parlé Corrido + Corrido: 100x (o 200x según banquero/región)
   static Map<String, dynamic> evaluatePlay({
     required String playType,
     required String betNumbers,
@@ -14,6 +14,8 @@ class LabSettlementEngine {
     required String drawCentena,
     required String? drawCorrido1,
     required String? drawCorrido2,
+    double parleFijoMultiplier = 900.0,
+    double parleCorridoMultiplier = 100.0,
   }) {
     bool isWon = false;
     double payoutMultiplier = 0.0;
@@ -21,7 +23,7 @@ class LabSettlementEngine {
     final bet = betNumbers.trim();
     switch (playType.toLowerCase()) {
       case 'fijo':
-        if (bet == drawFijo) {
+        if (bet.padLeft(2, '0') == drawFijo.padLeft(2, '0')) {
           isWon = true;
           payoutMultiplier = 70.0;
         }
@@ -37,8 +39,9 @@ class LabSettlementEngine {
 
       case 'corrido':
         int hits = 0;
-        if (bet == drawCorrido1) hits++;
-        if (bet == drawCorrido2) hits++;
+        final padBet = bet.padLeft(2, '0');
+        if (padBet == drawCorrido1?.padLeft(2, '0')) hits++;
+        if (padBet == drawCorrido2?.padLeft(2, '0')) hits++;
         if (hits > 0) {
           isWon = true;
           payoutMultiplier = 20.0 * hits;
@@ -54,7 +57,7 @@ class LabSettlementEngine {
           if (winners.contains(n1) && winners.contains(n2)) {
             isWon = true;
             final hasFijo = (n1 == drawFijo || n2 == drawFijo);
-            payoutMultiplier = hasFijo ? 900.0 : 100.0;
+            payoutMultiplier = hasFijo ? parleFijoMultiplier : parleCorridoMultiplier;
           }
         }
         break;

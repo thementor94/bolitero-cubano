@@ -1,0 +1,38 @@
+{
+  "poll_id": "2026-11-10",
+  "question": "¿Cuál es tu número fijo para el sorteo de hoy?",
+  "closes_at": "2026-11-10T21:30:00Z",
+  "total_votes": 348,
+  "top_picks": [
+    {
+      "number": "15",
+      "charada": "Perro",
+      "votes": 82,
+      "percentage": 23.5
+    },
+    {
+      "number": "21",
+      "charada": "Majá",
+      "votes": 64,
+      "percentage": 18.4
+    },
+    {
+      "number": "04",
+      "charada": "Gato",
+      "votes": 49,
+      "percentage": 14.1
+    },
+    {
+      "number": "77",
+      "charada": "Banderas",
+      "votes": 38,
+      "percentage": 10.9
+    },
+    {
+      "number": "88",
+      "charada": "Hojas",
+      "votes": 31,
+      "percentage": 8.9
+    }
+  ]
+}

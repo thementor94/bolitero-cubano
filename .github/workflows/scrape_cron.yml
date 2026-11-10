@@ -2,9 +2,11 @@ name: Ingesta Oficial de Sorteos (Florida, GA, NY)
 
 on:
   schedule:
-    # 1:31 PM EST (18:31 UTC) y 9:46 PM EST (02:46 UTC)
-    - cron: '31 18 * * *'
-    - cron: '46 2 * * *'
+    # Ventana Mediodía EST: 1:32 PM, 1:45 PM, 1:55 PM (18:32, 18:45, 18:55 UTC)
+    - cron: '32,45,55 18 * * *'
+    # Ventana Noche EST: 9:47 PM, 9:55 PM, 10:10 PM (02:47, 02:55, 03:10 UTC)
+    - cron: '47,55 2 * * *'
+    - cron: '10 3 * * *'
   workflow_dispatch:
 
 jobs:

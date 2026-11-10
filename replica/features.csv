@@ -1,12 +1,12 @@
 feature,area,priority,original,clone,notes
-Resultados en tiempo real Florida (Midday/Evening),resultados,must,yes,no,Sorteo base de la bolita cubana
-Resultados en tiempo real Georgia (Midday/Evening/Night),resultados,must,yes,no,Sorteos suplementarios populares
-Resultados en tiempo real New York (Midday/Evening),resultados,must,yes,no,Lotería tradicional de respaldo
+Resultados en tiempo real Florida (Midday/Evening),resultados,must,yes,yes,Sorteo base de la bolita cubana
+Resultados en tiempo real Georgia (Midday/Evening/Night),resultados,must,yes,yes,Sorteos suplementarios populares
+Resultados en tiempo real New York (Midday/Evening),resultados,must,yes,yes,Lotería tradicional de respaldo
 Resultados Powerball y Mega Millions,resultados,should,yes,no,Loterías mayores de EEUU
 Desglose Bolita: Fijo Centena y Corridos,resultados,must,yes,yes,Implementado en el esqueleto base Flutter + SQLite
 Notificaciones push al publicar resultados,notificaciones,must,yes,no,Alerta instantánea en cuanto cierra el sorteo
 Buscador y diccionario de Charada Cubana Tradicional (1-100),charada,must,yes,yes,Implementado en el esqueleto base Flutter + SQLite
-Charada Mixta y Moderna ampliada,charada,should,yes,no,Significados populares y sueños modernos
+Charada Mixta y Moderna ampliada,charada,should,yes,yes,Significados populares y sueños modernos
 Buscador de sueños a números,charada,must,yes,yes,Implementado en el esqueleto base Flutter + SQLite
 Generador de Pirámide Pick 3 y Pick 4,algoritmos,must,yes,yes,Implementado en el esqueleto base Flutter + SQLite
 Generador de Pirámide de la Fecha,algoritmos,must,yes,yes,Implementado en el esqueleto base Flutter + SQLite

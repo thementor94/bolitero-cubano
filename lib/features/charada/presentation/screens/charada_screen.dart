@@ -3,6 +3,7 @@ import '../../../../core/theme/app_colors.dart';
 import '../../../../core/widgets/offline_banner.dart';
 import '../../../../data/models/charada_model.dart';
 import '../../../../data/repositories/charada_repository.dart';
+import 'charada_detail_screen.dart';
 
 class CharadaScreen extends StatefulWidget {
   const CharadaScreen({super.key});
@@ -16,6 +17,9 @@ class _CharadaScreenState extends State<CharadaScreen> {
   List<CharadaModel> _entries = [];
   bool _isLoading = true;
   String _searchQuery = '';
+  String _selectedCategory = 'Todos';
+
+  final List<String> _categories = ['Todos', 'Clásica', 'Animales', 'Santería'];
 
   @override
   void initState() {
@@ -25,82 +29,22 @@ class _CharadaScreenState extends State<CharadaScreen> {
 
   Future<void> _loadEntries() async {
     final list = await _charadaRepo.getAllEntries();
-    setState(() {
-      _entries = list;
-      _isLoading = false;
-    });
+    if (mounted) {
+      setState(() {
+        _entries = list;
+        _isLoading = false;
+      });
+    }
   }
 
-  Future<void> _onSearch(String q) async {
-    setState(() => _searchQuery = q);
-    final results = await _charadaRepo.search(q);
-    setState(() => _entries = results);
-  }
-
-  void _showDetailSheet(CharadaModel item) {
-    showModalBottomSheet(
-      context: context,
-      backgroundColor: AppColors.sheet,
-      shape: const RoundedRectangleBorder(
-        borderRadius: BorderRadius.vertical(top: Radius.circular(20)),
-      ),
-      builder: (context) {
-        return Padding(
-          padding: const EdgeInsets.all(20.0),
-          child: Column(
-            mainAxisSize: MainAxisSize.min,
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              Row(
-                children: [
-                  Container(
-                    width: 56,
-                    height: 56,
-                    decoration: const BoxDecoration(
-                      color: AppColors.gold,
-                      shape: BoxShape.circle,
-                    ),
-                    alignment: Alignment.center,
-                    child: Text(
-                      item.number.toString().padLeft(2, '0'),
-                      style: const TextStyle(
-                        fontFamily: 'JetBrainsMono',
-                        fontSize: 24,
-                        fontWeight: FontWeight.bold,
-                        color: AppColors.canvas,
-                      ),
-                    ),
-                  ),
-                  const SizedBox(width: 16),
-                  Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      Text(item.primaryName, style: const TextStyle(fontSize: 20, fontWeight: FontWeight.bold, color: AppColors.text)),
-                      const Text("Charada Tradicional Cubana", style: TextStyle(fontSize: 12, color: AppColors.textMuted)),
-                    ],
-                  ),
-                ],
-              ),
-              const SizedBox(height: 20),
-              const Text("Significados populares y sueños:", style: TextStyle(fontSize: 13, fontWeight: FontWeight.w600, color: AppColors.turquoise)),
-              const SizedBox(height: 8),
-              Wrap(
-                spacing: 8,
-                runSpacing: 8,
-                children: item.synonyms
-                    .map((s) => Chip(
-                          backgroundColor: AppColors.card,
-                          side: const BorderSide(color: AppColors.border),
-                          label: Text(s, style: const TextStyle(fontSize: 12, color: AppColors.text)),
-                        ))
-                    .toList(),
-              ),
-              const SizedBox(height: 20),
-            ],
-          ),
-        );
-      },
+  Future<void> _filter() async {
+    final results = await _charadaRepo.search(
+      _searchQuery,
+      category: _selectedCategory == 'Todos' ? null : _selectedCategory,
     );
+    if (mounted) {
+      setState(() => _entries = results);
+    }
   }
 
   @override
@@ -110,22 +54,33 @@ class _CharadaScreenState extends State<CharadaScreen> {
       appBar: AppBar(
         backgroundColor: AppColors.canvas,
         elevation: 0,
-        title: const Text("Charada Cubana", style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold, color: AppColors.gold)),
+        title: const Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Text("Charada Cubana", style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold, color: AppColors.gold)),
+            Text("Diccionario místico del 1 al 100", style: TextStyle(fontSize: 11, color: AppColors.textMuted)),
+          ],
+        ),
       ),
       body: Column(
         children: [
           const OfflineBanner(),
+          // Barra de búsqueda en tiempo real
           Padding(
-            padding: const EdgeInsets.all(12.0),
+            padding: const EdgeInsets.fromLTRB(16, 8, 16, 8),
             child: TextField(
+              onChanged: (val) {
+                _searchQuery = val;
+                _filter();
+              },
               style: const TextStyle(color: AppColors.text),
-              onChanged: _onSearch,
               decoration: InputDecoration(
+                hintText: "Buscar por número, animal, santo o sinónimo...",
+                hintStyle: const TextStyle(color: AppColors.textFaint, fontSize: 13),
+                prefixIcon: const Icon(Icons.search, color: AppColors.gold),
                 filled: true,
                 fillColor: AppColors.card,
-                hintText: "Busca un sueño o número...",
-                hintStyle: const TextStyle(color: AppColors.textMuted, fontSize: 13),
-                prefixIcon: const Icon(Icons.search, color: AppColors.gold),
+                contentPadding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
                 border: OutlineInputBorder(
                   borderRadius: BorderRadius.circular(12),
                   borderSide: const BorderSide(color: AppColors.border),
@@ -141,57 +96,123 @@ class _CharadaScreenState extends State<CharadaScreen> {
               ),
             ),
           ),
+
+          // Chips de categorías
+          SingleChildScrollView(
+            scrollDirection: Axis.horizontal,
+            padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 4),
+            child: Row(
+              children: _categories.map((cat) {
+                final isSelected = _selectedCategory == cat;
+                return Padding(
+                  padding: const EdgeInsets.only(right: 8.0),
+                  child: ChoiceChip(
+                    label: Text(cat),
+                    selected: isSelected,
+                    onSelected: (selected) {
+                      if (selected) {
+                        setState(() => _selectedCategory = cat);
+                        _filter();
+                      }
+                    },
+                    selectedColor: AppColors.gold.withOpacity(0.2),
+                    backgroundColor: AppColors.card,
+                    labelStyle: TextStyle(
+                      color: isSelected ? AppColors.gold : AppColors.textMuted,
+                      fontWeight: isSelected ? FontWeight.bold : FontWeight.normal,
+                      fontSize: 12,
+                    ),
+                    side: BorderSide(color: isSelected ? AppColors.gold : AppColors.border),
+                  ),
+                );
+              }).toList(),
+            ),
+          ),
+          const SizedBox(height: 6),
+
+          // Lista de Fichas
           Expanded(
             child: _isLoading
                 ? const Center(child: CircularProgressIndicator(color: AppColors.gold))
                 : _entries.isEmpty
-                    ? const Center(child: Text("Sin coincidencias en la charada", style: TextStyle(color: AppColors.textMuted)))
-                    : GridView.builder(
-                        padding: const EdgeInsets.all(12),
-                        gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-                          crossAxisCount: 4,
-                          crossAxisSpacing: 8,
-                          mainAxisSpacing: 8,
-                          childAspectRatio: 0.85,
-                        ),
+                    ? const Center(
+                        child: Text("No se encontraron coincidencias en la Charada.", style: TextStyle(color: AppColors.textMuted)),
+                      )
+                    : ListView.builder(
+                        padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
                         itemCount: _entries.length,
                         itemBuilder: (context, index) {
                           final item = _entries[index];
-                          return Material(
+                          final numStr = item.number.toString().padLeft(2, '0');
+                          return Card(
                             color: AppColors.card,
-                            borderRadius: BorderRadius.circular(12),
+                            margin: const EdgeInsets.only(bottom: 8),
+                            shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(12),
+                              side: const BorderSide(color: AppColors.border),
+                            ),
                             child: InkWell(
                               borderRadius: BorderRadius.circular(12),
-                              onTap: () => _showDetailSheet(item),
-                              child: Container(
-                                decoration: BoxDecoration(
-                                  borderRadius: BorderRadius.circular(12),
-                                  border: Border.all(color: AppColors.border, width: 1),
-                                ),
-                                padding: const EdgeInsets.all(6),
-                                child: Column(
-                                  mainAxisAlignment: MainAxisAlignment.center,
+                              onTap: () {
+                                Navigator.of(context).push(
+                                  MaterialPageRoute(builder: (_) => CharadaDetailScreen(entry: item)),
+                                );
+                              },
+                              child: Padding(
+                                padding: const EdgeInsets.all(12.0),
+                                child: Row(
                                   children: [
-                                    Text(
-                                      item.number.toString().padLeft(2, '0'),
-                                      style: const TextStyle(
-                                        fontFamily: 'JetBrainsMono',
-                                        fontSize: 18,
-                                        fontWeight: FontWeight.bold,
-                                        color: AppColors.gold,
+                                    Container(
+                                      width: 44,
+                                      height: 44,
+                                      decoration: BoxDecoration(
+                                        color: AppColors.gold.withOpacity(0.15),
+                                        shape: BoxShape.circle,
+                                        border: Border.all(color: AppColors.gold, width: 1.5),
+                                      ),
+                                      alignment: Alignment.center,
+                                      child: Text(
+                                        numStr,
+                                        style: const TextStyle(
+                                          fontFamily: 'JetBrainsMono',
+                                          fontSize: 18,
+                                          fontWeight: FontWeight.bold,
+                                          color: AppColors.gold,
+                                        ),
                                       ),
                                     ),
-                                    const SizedBox(height: 4),
-                                    Text(
-                                      item.primaryName,
-                                      maxLines: 1,
-                                      overflow: TextOverflow.ellipsis,
-                                      textAlign: TextAlign.center,
-                                      style: const TextStyle(
-                                        fontSize: 11,
-                                        color: AppColors.text,
+                                    const SizedBox(width: 14),
+                                    Expanded(
+                                      child: Column(
+                                        crossAxisAlignment: CrossAxisAlignment.start,
+                                        children: [
+                                          Row(
+                                            children: [
+                                              Text(
+                                                item.primaryName,
+                                                style: const TextStyle(fontSize: 15, fontWeight: FontWeight.bold, color: AppColors.text),
+                                              ),
+                                              if (item.deity != null) ...[
+                                                const SizedBox(width: 8),
+                                                Text(
+                                                  "· ${item.deity!.split('/').first.trim()}",
+                                                  style: const TextStyle(fontSize: 11, color: AppColors.turquoise),
+                                                  overflow: TextOverflow.ellipsis,
+                                                ),
+                                              ],
+                                            ],
+                                          ),
+                                          const SizedBox(height: 4),
+                                          Text(
+                                            item.synonyms.take(4).join(', '),
+                                            style: const TextStyle(fontSize: 12, color: AppColors.textMuted),
+                                            maxLines: 1,
+                                            overflow: TextOverflow.ellipsis,
+                                          ),
+                                        ],
                                       ),
                                     ),
+                                    const Icon(Icons.chevron_right, color: AppColors.textFaint),
                                   ],
                                 ),
                               ),

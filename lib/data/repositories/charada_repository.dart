@@ -20,22 +20,34 @@ class CharadaRepository {
     return CharadaModel.fromMap(maps.first);
   }
 
-  Future<List<CharadaModel>> search(String query) async {
+  Future<List<CharadaModel>> search(String query, {String? category}) async {
     final q = query.trim().toLowerCase();
-    if (q.isEmpty) return getAllEntries();
-
     final db = await DatabaseHelper.database;
-    // Búsqueda por número directo o por coincidencia difusa en nombres/sinónimos
+
+    String where = '';
+    List<dynamic> whereArgs = [];
+
     final asInt = int.tryParse(q);
     if (asInt != null && asInt >= 1 && asInt <= 100) {
       final direct = await getByNumber(asInt);
       if (direct != null) return [direct];
     }
 
+    if (q.isNotEmpty) {
+      where = '(LOWER(primary_name) LIKE ? OR LOWER(synonyms) LIKE ? OR LOWER(COALESCE(deity, "")) LIKE ?)';
+      whereArgs.addAll(['%$q%', '%$q%', '%$q%']);
+    }
+
+    if (category != null && category.toLowerCase() != 'todos') {
+      if (where.isNotEmpty) where += ' AND ';
+      where += 'category = ?';
+      whereArgs.add(category.toLowerCase());
+    }
+
     final maps = await db.query(
       'charada_entries',
-      where: 'LOWER(primary_name) LIKE ? OR LOWER(synonyms) LIKE ?',
-      whereArgs: ['%$q%', '%$q%'],
+      where: where.isEmpty ? null : where,
+      whereArgs: whereArgs.isEmpty ? null : whereArgs,
       orderBy: 'number ASC',
     );
     return maps.map(CharadaModel.fromMap).toList();

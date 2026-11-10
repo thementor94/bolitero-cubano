@@ -45,38 +45,76 @@ class BolitaCalculator {
     return suggestions.toList();
   }
 
-  /// Calcula la Cruz de la Suerte Numérica para una fecha dada.
-  static Map<String, int> calculateLuckCross(DateTime date) {
-    final c = (date.day + 3) % 10;
-    final n = (c + 3) % 10;
-    final s = (c + 6) % 10;
-    final e = (n + s) % 10;
-    final w = (n - s).abs() % 10;
-    return {'center': c, 'north': n, 'south': s, 'east': e, 'west': w};
+  /// Matriz 3x3 Tradicional de la Cruz de la Suerte Numérica a partir de una fecha DD/MM/YYYY.
+  /// Fila 0: [d1, m1, y1]
+  /// Fila 1: [d2, C,  m2]
+  /// Fila 2: [s1, s2, y2]
+  static List<List<int>> calculateLuckCross3x3(DateTime date) {
+    final d1 = date.day ~/ 10;
+    final d2 = date.day % 10;
+    final m1 = date.month ~/ 10;
+    final m2 = date.month % 10;
+    final year2Digits = date.year % 100;
+    final y1 = year2Digits ~/ 10;
+    final y2 = year2Digits % 10;
+
+    final center = (d1 + d2 + m1 + m2 + y1 + y2) % 10;
+    final s1 = (d1 + d2) % 10;
+    final s2 = (m1 + m2) % 10;
+
+    return [
+      [d1, m1, y1],
+      [d2, center, m2],
+      [s1, s2, y2],
+    ];
   }
 
-  /// Parejas resultantes cruzadas
-  static List<String> calculateCrossPairs(Map<String, int> cross) {
-    final c = cross['center']!;
-    final n = cross['north']!;
-    final s = cross['south']!;
-    final e = cross['east']!;
-    final w = cross['west']!;
-    return ["$c$n", "$c$w", "$c$e", "$c$s"];
+  /// Extrae las combinaciones de pares resultantes de la Cruz 3x3 (horizontales, verticales, diagonales y centro-cardinales)
+  static List<String> extractCrossPairs3x3(List<List<int>> matrix) {
+    if (matrix.length != 3 || matrix[0].length != 3) return [];
+    final pairs = <String>{};
+
+    // Horizontales
+    for (int r = 0; r < 3; r++) {
+      pairs.add("${matrix[r][0]}${matrix[r][1]}");
+      pairs.add("${matrix[r][1]}${matrix[r][2]}");
+    }
+
+    // Verticales
+    for (int c = 0; c < 3; c++) {
+      pairs.add("${matrix[0][c]}${matrix[1][c]}");
+      pairs.add("${matrix[1][c]}${matrix[2][c]}");
+    }
+
+    // Diagonales principales
+    pairs.add("${matrix[0][0]}${matrix[1][1]}");
+    pairs.add("${matrix[1][1]}${matrix[2][2]}");
+    pairs.add("${matrix[0][2]}${matrix[1][1]}");
+    pairs.add("${matrix[1][1]}${matrix[2][0]}");
+
+    // Centro con esquinas
+    final center = matrix[1][1];
+    pairs.add("$center${matrix[0][1]}"); // Centro - Norte
+    pairs.add("$center${matrix[2][1]}"); // Centro - Sur
+    pairs.add("$center${matrix[1][0]}"); // Centro - Oeste
+    pairs.add("$center${matrix[1][2]}"); // Centro - Este
+
+    return pairs.toList();
   }
 
   /// Tabla de Equivalencias (+25, -25, Espejo e Inverso)
   static Map<String, String> calculateEquivalencies(int number) {
-    final p25 = (number + 25) % 100;
-    final m25 = (number - 25 + 100) % 100;
-    
+    final nClamped = number.clamp(0, 99);
+    final p25 = (nClamped + 25) % 100;
+    final m25 = (nClamped - 25 + 100) % 100;
+
     // Regla del Espejo tradicional de la Bolita: sumar 5 a cada dígito módulo 10
-    final d = (number ~/ 10 + 5) % 10;
-    final u = (number % 10 + 5) % 10;
+    final d = (nClamped ~/ 10 + 5) % 10;
+    final u = (nClamped % 10 + 5) % 10;
     final espejo = d * 10 + u;
 
     // Regla del Inverso (virado)
-    final inverso = (number % 10) * 10 + (number ~/ 10);
+    final inverso = (nClamped % 10) * 10 + (nClamped ~/ 10);
 
     return {
       'plus25': p25.toString().padLeft(2, '0'),
@@ -86,15 +124,21 @@ class BolitaCalculator {
     };
   }
 
-  /// Generador de Candados C(n, 2) a partir de una lista de números
-  static List<String> generateCandados(List<String> numbers) {
-    final clean = numbers.toSet().toList();
-    final pairs = <String>[];
+  /// Generador de Parlés C(n, 2)
+  static List<String> generateParles(List<String> numbers) {
+    final clean = numbers.map((n) => n.trim().padLeft(2, '0')).toSet().toList();
+    clean.sort();
+    final parles = <String>[];
     for (int i = 0; i < clean.length; i++) {
       for (int j = i + 1; j < clean.length; j++) {
-        pairs.add("${clean[i]}-${clean[j]}");
+        parles.add("${clean[i]} - ${clean[j]}");
       }
     }
-    return pairs;
+    return parles;
+  }
+
+  /// Generador de Candados (terna de 3 números con todas sus combinaciones de pares cerradas)
+  static List<String> generateCandados(List<String> numbers) {
+    return generateParles(numbers);
   }
 }

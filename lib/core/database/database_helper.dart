@@ -33,7 +33,7 @@ class DatabaseHelper {
       path,
       version: 1,
       onCreate: (db, version) async {
-        // Fallback DDL en caso de inicialización limpia
+        // Fallback DDL en caso de inicialización limpia sin asset
         await db.execute('''
           CREATE TABLE IF NOT EXISTS local_draws (
             id TEXT PRIMARY KEY,
@@ -53,11 +53,23 @@ class DatabaseHelper {
         ''');
 
         await db.execute('''
+          CREATE INDEX IF NOT EXISTS idx_draws_date_lottery 
+          ON local_draws (draw_date DESC, lottery, period);
+        ''');
+
+        await db.execute('''
+          CREATE INDEX IF NOT EXISTS idx_draws_fijo 
+          ON local_draws (fijo);
+        ''');
+
+        await db.execute('''
           CREATE TABLE IF NOT EXISTS charada_entries (
             number INTEGER PRIMARY KEY,
             primary_name TEXT NOT NULL,
             category TEXT DEFAULT 'clasica',
             synonyms TEXT NOT NULL,
+            deity TEXT,
+            accompanying TEXT,
             description TEXT
           );
         ''');
@@ -77,6 +89,26 @@ class DatabaseHelper {
             created_at INTEGER NOT NULL,
             settled_at INTEGER
           );
+        ''');
+
+        await db.execute('''
+          CREATE INDEX IF NOT EXISTS idx_lab_pending 
+          ON lab_plays (status, draw_date, lottery, period);
+        ''');
+      },
+      onOpen: (db) async {
+        // Garantizar que los índices existan siempre aun si se cargó la BD del asset pre-sembrado
+        await db.execute('''
+          CREATE INDEX IF NOT EXISTS idx_draws_date_lottery 
+          ON local_draws (draw_date DESC, lottery, period);
+        ''');
+        await db.execute('''
+          CREATE INDEX IF NOT EXISTS idx_draws_fijo 
+          ON local_draws (fijo);
+        ''');
+        await db.execute('''
+          CREATE INDEX IF NOT EXISTS idx_lab_pending 
+          ON lab_plays (status, draw_date, lottery, period);
         ''');
       },
     );

@@ -1,7 +1,7 @@
 name: bolitero_cubano
 description: "Aplicación 100% libre, offline-first y sin publicidad de La Bolita Cubana y Loterías"
 publish_to: 'none'
-version: 1.0.0+1
+version: 1.1.0+2
 
 environment:
   sdk: '>=3.5.0 <4.0.0'

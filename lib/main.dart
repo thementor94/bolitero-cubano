@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'core/theme/app_colors.dart';
 import 'features/home/presentation/screens/home_screen.dart';
+import 'features/history/presentation/screens/history_stats_hub.dart';
 import 'features/charada/presentation/screens/charada_screen.dart';
 import 'features/tools/presentation/screens/tools_screen.dart';
 import 'features/lab/presentation/screens/lab_screen.dart';
@@ -45,6 +46,7 @@ class _MainNavigationShellState extends State<MainNavigationShell> {
 
   final List<Widget> _screens = const [
     HomeScreen(),
+    HistoryStatsHub(),
     CharadaScreen(),
     ToolsScreen(),
     LabScreen(),
@@ -67,6 +69,11 @@ class _MainNavigationShellState extends State<MainNavigationShell> {
             icon: Icon(Icons.casino_outlined, color: AppColors.textMuted),
             selectedIcon: Icon(Icons.casino, color: AppColors.gold),
             label: 'Resultados',
+          ),
+          NavigationDestination(
+            icon: Icon(Icons.insights_outlined, color: AppColors.textMuted),
+            selectedIcon: Icon(Icons.insights, color: AppColors.gold),
+            label: 'Historial/Stats',
           ),
           NavigationDestination(
             icon: Icon(Icons.menu_book_outlined, color: AppColors.textMuted),
