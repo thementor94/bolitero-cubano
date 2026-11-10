@@ -3,8 +3,9 @@ import 'package:flutter/material.dart';
 abstract final class AppColors {
   // Nivel de superficies (tonalidad oscura sin sombras pesadas, optimizada para pantallas OLED)
   static const canvas    = Color(0xFF0E1116); // Nivel 0: fondo de app
-  static const card      = Color(0xFF171B22); // Nivel 1: tarjetas y contenedores
-  static const border    = Color(0xFF262B35); // Borde arquitectónico de 1px
+  static const card         = Color(0xFF171B22); // Nivel 1: tarjetas y contenedores
+  static const cardElevated = Color(0xFF1E232C); // Nivel 1.5: chips y elementos elevados
+  static const border       = Color(0xFF262B35); // Borde arquitectónico de 1px
   static const sheet     = Color(0xFF1E232C); // Nivel 2: modales y hojas inferiores
   static const sheetEdge = Color(0xFF363D4A); // Borde de modales
   static const key       = Color(0xFF252B36); // Nivel 3: teclas del teclado 3x4
