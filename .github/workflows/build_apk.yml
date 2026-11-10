@@ -27,11 +27,11 @@ jobs:
           channel: 'stable'
           cache: true
 
-      - name: Re-generar archivos nativos de Android oficiales de Flutter
+      - name: Re-generar proyecto Android oficial
         run: |
-          # Elimina el scaffolding manual previo para permitir la generación estándar
-          rm -rf android
-          flutter create --platforms=android .
+          mkdir ../temp_bolitero && cd ../temp_bolitero
+          flutter create --org com.bolitero.libre --project-name bolitero_cubano .
+          cp -r android $GITHUB_WORKSPACE/
 
       - name: Instalar dependencias
         run: flutter pub get
