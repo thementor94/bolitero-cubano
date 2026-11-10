@@ -41,12 +41,11 @@ jobs:
       - name: Instalar dependencias
         run: flutter pub get
 
-      - name: Compilar APK capturando excepciones
-        run: |
-          flutter build apk --debug --verbose 2>&1 | tee build.log | grep -E "Error:|Exception:|FAILURE|BUILD FAILED" -A 10 || true
+      - name: Compilar APK Release
+        run: flutter build apk --release
 
-      - name: Subir log como release note
-        if: failure()
-        run: |
-          echo "=== TAIL DEL LOG DE ERROR ==="
-          tail -n 100 build.log
+      - name: Subir artefacto APK Release
+        uses: actions/upload-artifact@v4
+        with:
+          name: bolitero-cubano-apk
+          path: build/app/outputs/flutter-apk/*.apk
